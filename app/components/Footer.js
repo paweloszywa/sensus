@@ -1,47 +1,49 @@
-import { Heart, Phone, Mail, MapPin } from 'lucide-react'
+import { Heart, Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'O nas', href: '#about' },
-    { name: 'Oferta', href: '#services' },
-    { name: 'Cennik', href: '#pricing' },
-    { name: 'Galeria', href: '#gallery' },
-    { name: 'Kontakt', href: '#contact' }
-  ]
+    { name: "O nas", href: "#about" },
+    { name: "Oferta", href: "#services" },
+    { name: "Cennik", href: "#pricing" },
+    { name: "Galeria", href: "#gallery" },
+    { name: "Kontakt", href: "#contact" },
+  ];
 
   const services = [
-    'Integracja sensoryczna',
-    'Trening słuchowy metodą Warnkego',
-    'Terapia ręki',
-    'Terapia pedagogiczna',
-    'TUS',
-    'Terapia neurotaktylna',
-    'Korekcja wad postawy',
-    'Trening koncentracji uwagi'
-  ]
+    "Integracja sensoryczna",
+    "Trening słuchowy metodą Warnkego",
+    "Terapia ręki",
+    "Terapia pedagogiczna",
+    "TUS",
+    "Terapia neurotaktylna",
+    "Korekcja wad postawy",
+    "Trening koncentracji uwagi",
+  ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <img 
-                src="/images/logo1.png" 
-                alt="Sensus Logo" 
-                className="h-12 w-auto mr-3"
+              <img
+                src="/images/logo1.png"
+                alt="Sensus Logo"
+                className="h-16 w-auto rounded-lg bg-white p-2"
               />
-              <div>
-                <h3 className="text-xl font-bold">Sensus</h3>
-                <p className="text-sm text-gray-400">Centrum Terapii</p>
+              {/* Ukryty tekst dla SEO */}
+              <div className="sr-only">
+                <h1>Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka</h1>
+                <p>Profesjonalne terapie dla dzieci w Kielcach</p>
               </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Profesjonalne centrum terapii i wspomagania rozwoju dziecka w Kielcach. 
-              Pomagamy dzieciom rozwijać swój potencjał poprzez specjalistyczne terapie.
+              Profesjonalne centrum terapii i wspomagania rozwoju dziecka w
+              Kielcach. Pomagamy dzieciom rozwijać swój potencjał poprzez
+              specjalistyczne terapie.
             </p>
             <div className="flex items-center text-sm text-gray-400">
               <Heart className="h-4 w-4 mr-2 text-secondary-300" />
@@ -51,7 +53,7 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Szybkie linki</h4>
+            <h4 className="text-lg font-semibold mb-4">Nawigacja</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -75,8 +77,13 @@ export default function Footer() {
                   {service}
                 </li>
               ))}
-              <li className="text-primary-500 text-sm font-medium">
-                <a href="#services">Zobacz wszystkie usługi →</a>
+              <li className="text-white text-sm font-medium">
+                <a
+                  href="#services"
+                  className="hover:text-gray-300 transition-colors duration-200"
+                >
+                  Zobacz wszystkie usługi →
+                </a>
               </li>
             </ul>
           </div>
@@ -88,23 +95,42 @@ export default function Footer() {
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-3 text-accent-400 flex-shrink-0" />
                 <div>
-                  <div className="text-white font-medium">516 577 126</div>
-                  <div className="text-gray-400 text-sm">Pon-Pt: 8:00-18:00</div>
+                  <a
+                    href="tel:516577126"
+                    className="text-white font-medium hover:text-gray-300 transition-colors duration-200"
+                  >
+                    516 577 126
+                  </a>
+                  <div className="text-gray-400 text-sm">
+                    Pon-Nd: 8:00-21:00
+                  </div>
                 </div>
               </div>
-              
+
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-3 text-secondary-300 flex-shrink-0" />
                 <div>
-                  <div className="text-white">sensuskielce@gmail.com</div>
+                  <a
+                    href="mailto:sensuskielce@gmail.com"
+                    className="text-white hover:text-gray-300 transition-colors duration-200"
+                  >
+                    sensuskielce@gmail.com
+                  </a>
                   <div className="text-gray-400 text-sm">Odpowiadamy w 24h</div>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
-                <MapPin className="h-4 w-4 mr-3 text-primary-500 flex-shrink-0 mt-1" />
+                <MapPin className="h-4 w-4 mr-3 text-gray-300 flex-shrink-0 mt-1" />
                 <div>
-                  <div className="text-white">ul. Karczówkowska 11</div>
+                  <a
+                    href="https://maps.google.com/?q=Karczówkowska+11,+25-019+Kielce"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-gray-300 transition-colors duration-200"
+                  >
+                    ul. Karczówkowska 11
+                  </a>
                   <div className="text-gray-400 text-sm">25-019 Kielce</div>
                 </div>
               </div>
@@ -114,25 +140,22 @@ export default function Footer() {
 
         {/* Bottom section */}
         <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka. 
-              Wszystkie prawa zastrzeżone.
-            </div>
-            <div className="text-gray-400 text-sm">
-              <span className="mr-4">NIP: 9591459805</span>
-              <span>ING Bank Śląski</span>
+          <div className="text-center">
+            <div className="text-gray-400 text-sm mb-4">
+              © {currentYear} Sensus - Centrum Terapii i Wspomagania Rozwoju
+              Dziecka. Wszystkie prawa zastrzeżone.
             </div>
           </div>
-          
+
           <div className="mt-4 text-center text-gray-500 text-xs">
             <p>
-              Centrum powstało z myślą o dzieciach potrzebujących wsparcia w rozwoju. 
-              Każde dziecko zasługuje na profesjonalną pomoc i troskliwą opiekę.
+              Centrum powstało z myślą o dzieciach potrzebujących wsparcia w
+              rozwoju. Każde dziecko zasługuje na profesjonalną pomoc i
+              troskliwą opiekę.
             </p>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

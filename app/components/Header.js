@@ -29,6 +29,10 @@ export default function Header() {
                 alt="Sensus Logo" 
                 className="h-16 w-auto"
               />
+              {/* Ukryty tekst dla SEO */}
+              <div className="sr-only">
+                <h1>Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka w Kielcach</h1>
+              </div>
             </a>
           </div>
 
