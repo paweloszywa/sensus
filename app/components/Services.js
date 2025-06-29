@@ -1,56 +1,120 @@
-import { Brain, Ear, Hand, BookOpen, Target, Waves, Zap, Eye } from 'lucide-react'
+import {
+  Brain,
+  Ear,
+  Hand,
+  BookOpen,
+  Target,
+  Waves,
+  Zap,
+  Eye,
+} from "lucide-react";
 
 export default function Services() {
   const services = [
     {
       icon: Brain,
       title: "Integracja sensoryczna",
-      description: "Terapia pomagająca dzieciom w prawidłowym przetwarzaniu informacji sensorycznych z otoczenia.",
-      details: ["Usprawnia koncentrację", "Poprawia koordynację", "Redukuje nadwrażliwość"]
+      description:
+        "Terapia wspierająca dzieci w prawidłowym odbieraniu, przetwarzaniu i organizowaniu bodźców zmysłowych z otoczenia.",
+      details: [
+        "Usprawnia koncentrację",
+        "Poprawia koordynację",
+        "Redukuje nadwrażliwość",
+        "Rozwija świadomość ciała",
+        "Wspiera planowanie motoryczne",
+      ],
     },
     {
       icon: Ear,
       title: "Trening słuchowy metodą Warnkego",
-      description: "Innowacyjna metoda terapii słuchu wspierająca rozwój mowy i koncentracji.",
-      details: ["Usprawnia percepcję słuchową", "Rozwija umiejętności językowe", "Poprawia koncentrację"]
+      description:
+        "Innowacyjna metoda terapii słuchu skuteczna w leczeniu dysleksji, zaburzeń przetwarzania słuchowego APD i trudności w nauce.",
+      details: [
+        "Wspiera dzieci z dysleksją",
+        "Poprawia przetwarzanie słuchowe",
+        "Rozwija umiejętności czytania i pisania",
+        "Pomaga w problemach z wymową",
+      ],
     },
     {
       icon: Hand,
       title: "Terapia ręki",
-      description: "Specjalistyczna terapia usprawniająca funkcje motoryki małej i sprawność manualną.",
-      details: ["Usprawnia chwyt", "Przygotowuje do pisania", "Rozwija precyzję ruchów"]
+      description:
+        "Specjalistyczna terapia usprawniająca funkcje motoryki małej, koordynację wzrokowo-ruchową i sprawność manualną w codziennych czynnościach.",
+      details: [
+        "Usprawnia chwyt",
+        "Przygotowuje do pisania",
+        "Rozwija precyzję ruchów",
+        "Poprawia koordynację wzrokowo-ruchową",
+      ],
     },
     {
       icon: BookOpen,
       title: "Terapia pedagogiczna",
-      description: "Wsparcie w nauce i rozwijaniu umiejętności szkolnych dostosowane do potrzeb dziecka.",
-      details: ["Wspiera naukę czytania", "Rozwija umiejętności matematyczne", "Buduje motywację do nauki"]
+      description:
+        "Wsparcie w nauce i rozwijaniu umiejętności szkolnych dostosowane do potrzeb dziecka.",
+      details: [
+        "Wspiera naukę czytania",
+        "Rozwija umiejętności matematyczne",
+        "Buduje motywację do nauki",
+        "Pomaga w trudnościach z pisaniem",
+        "Rozwija umiejętności poznawcze",
+      ],
     },
     {
       icon: Target,
       title: "TUS (Trening Umiejętności Społecznych)",
-      description: "Program rozwijający kompetencje społeczne i umiejętności komunikacyjne.",
-      details: ["Uczy zasad współpracy", "Rozwija empatię", "Buduje pewność siebie"]
+      description:
+        "Program rozwijający kompetencje społeczne i umiejętności komunikacyjne.",
+      details: [
+        "Uczy zasad współpracy",
+        "Rozwija empatię",
+        "Buduje pewność siebie",
+        "Wspiera umiejętności komunikacyjne",
+        "Pomaga w nawiązywaniu relacji",
+      ],
     },
     {
       icon: Waves,
       title: "Terapia neurotaktylna",
-      description: "Metoda stymulacji dotykowej wspierająca rozwój układu nerwowego.",
-      details: ["Usprawnia percepcję dotykową", "Redukuje napięcie", "Wspiera rozwój neuromotoryczny"]
+      description:
+        "Metoda stymulacji dotykowej wspierająca rozwój układu nerwowego.",
+      details: [
+        "Usprawnia percepcję dotykową",
+        "Redukuje napięcie",
+        "Wspiera rozwój neuromotoryczny",
+        "Poprawa samoregulacji",
+        "Poprawa zachowania i funkcjonowania emocjonalnego",
+      ],
     },
     {
       icon: Zap,
       title: "Korekcja wad postawy",
-      description: "Kompleksowa terapia usprawniająca postawę ciała i funkcje motoryczne.",
-      details: ["Poprawia sylwetkę", "Wzmacnia mięśnie", "Uczy prawidłowych wzorców ruchowych"]
+      description:
+        "Kompleksowa terapia usprawniająca postawę ciała i funkcje motoryczne.",
+      details: [
+        "Poprawia sylwetkę",
+        "Wzmconienie mięśni posturalnych",
+        "Uczy prawidłowych wzorców ruchowych",
+        "Poprawia równowagę i stabilność",
+        "Zwiększa elastyczność i ruchomość",
+      ],
     },
     {
       icon: Eye,
       title: "Trening koncentracji uwagi",
-      description: "Specjalistyczny program rozwijający zdolność skupienia i kontroli uwagi.",
-      details: ["Wydłuża czas koncentracji", "Usprawnia pamięć roboczą", "Rozwija funkcje wykonawcze"]
-    }
-  ]
+      description:
+        "Specjalistyczny program rozwijający zdolność skupienia i kontroli uwagi.",
+      details: [
+        "Poprawia zdolność skupienia na zadaniu",
+        "Zwiększenie tempa pracy",
+        "Usprawnia pamięć i organizację",
+        "Rozwija funkcje wykonawcze",
+        "Poprawia zdolność planowania",
+        "Rozwija umiejętność ignorowania rozpraszaczy",
+      ],
+    },
+  ];
 
   return (
     <section id="services" className="py-20 bg-white">
@@ -60,14 +124,17 @@ export default function Services() {
             Nasza oferta
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Oferujemy szeroki zakres specjalistycznych terapii dostosowanych 
-            do indywidualnych potrzeb każdego dziecka.
+            Oferujemy szeroki zakres specjalistycznych terapii dostosowanych do
+            indywidualnych potrzeb każdego dziecka.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-200">
+            <div
+              key={index}
+              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-200"
+            >
               <div className="flex justify-center mb-4">
                 <service.icon className="h-12 w-12 text-blue-600" />
               </div>
@@ -79,7 +146,10 @@ export default function Services() {
               </p>
               <ul className="space-y-2">
                 {service.details.map((detail, detailIndex) => (
-                  <li key={detailIndex} className="flex items-center text-sm text-gray-600">
+                  <li
+                    key={detailIndex}
+                    className="flex items-center text-sm text-gray-600"
+                  >
                     <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 flex-shrink-0"></div>
                     {detail}
                   </li>
@@ -99,5 +169,5 @@ export default function Services() {
         </div>
       </div>
     </section>
-  )
+  );
 }

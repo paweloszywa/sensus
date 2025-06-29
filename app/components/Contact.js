@@ -1,65 +1,47 @@
-'use client'
-import { useState } from 'react'
-import { Phone, Mail, MapPin, Clock, Send, Building2 } from 'lucide-react'
+"use client";
+import { Phone, Mail, MapPin, Clock, Building2, Copy } from "lucide-react";
+import { useState } from "react";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  })
+  const [copied, setCopied] = useState(false);
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Tu można dodać logikę wysyłania formularza
-    alert('Dziękujemy za wiadomość! Skontaktujemy się z Państwem w ciągu 24 godzin.')
-    setFormData({ name: '', email: '', phone: '', message: '' })
-  }
+  const copyAccountNumber = () => {
+    const accountNumber = "78 1050 1416 1000 0090 8500 2203";
+    navigator.clipboard.writeText(accountNumber).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
 
   const contactInfo = [
     {
       icon: Phone,
       title: "Telefon",
       content: "516 577 126",
-      description: "Pon-Pt: 8:00-18:00"
+      description: "",
+      href: "tel:516577126",
     },
     {
       icon: Mail,
       title: "E-mail",
       content: "sensuskielce@gmail.com",
-      description: "Odpowiadamy w ciągu 24h"
+      description: "",
+      href: "mailto:sensuskielce@gmail.com",
     },
     {
       icon: MapPin,
       title: "Adres",
-      content: "ul. Karczówkowska 11",
-      description: "25-019 Kielce"
+      content: "ul. Karczówkowska 11, piętro 1",
+      description: "25-019 Kielce | Bezpłatne miejsca parkingowe",
+      href: "https://maps.google.com/?q=Karczówkowska+11,+25-019+Kielce",
     },
     {
       icon: Building2,
       title: "Dane firmy",
-      content: "NIP: 9591459805",
-      description: "ING Bank Śląski"
-    }
-  ]
-
-  const schedule = [
-    { day: "Poniedziałek", hours: "8:00 - 18:00" },
-    { day: "Wtorek", hours: "8:00 - 18:00" },
-    { day: "Środa", hours: "8:00 - 18:00" },
-    { day: "Czwartek", hours: "8:00 - 18:00" },
-    { day: "Piątek", hours: "8:00 - 16:00" },
-    { day: "Sobota", hours: "Zamknięte" },
-    { day: "Niedziela", hours: "Zamknięte" }
-  ]
+      content: "SENSUS CENTRUM TERAPII I WSPOMAGANIA ROZWOJU DZIECKA",
+      description: "Maria Cecko | NIP: 9591459805 | REGON: 386272268",
+    },
+  ];
 
   return (
     <section id="contact" className="py-20 bg-white">
@@ -69,152 +51,116 @@ export default function Contact() {
             Kontakt
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Skontaktuj się z nami, aby umówić wizytę lub dowiedzieć się więcej 
-            o naszych usługach. Chętnie odpowiemy na wszystkie pytania.
+            Skontaktuj się z nami, aby umówić wizytę lub dowiedzieć się więcej o
+            naszych usługach. Chętnie odpowiemy na wszystkie pytania.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact form */}
-          <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Napisz do nas
-            </h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Imię i nazwisko *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  E-mail *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                  Telefon
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Wiadomość *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                  placeholder="Opisz potrzeby dziecka lub zadaj pytanie..."
-                ></textarea>
-              </div>
-              
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"
-              >
-                <Send className="h-5 w-5 mr-2" />
-                Wyślij wiadomość
-              </button>
-            </form>
-          </div>
-
+        <div className="max-w-4xl mx-auto">
           {/* Contact information */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
               Informacje kontaktowe
             </h3>
-            
-            <div className="space-y-6 mb-8">
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="flex-shrink-0 p-3 bg-blue-100 rounded-lg">
-                    <info.icon className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div className="ml-4">
-                    <h4 className="text-lg font-semibold text-gray-900">{info.title}</h4>
-                    <p className="text-gray-700 font-medium">{info.content}</p>
-                    <p className="text-gray-600 text-sm">{info.description}</p>
-                  </div>
+                <div
+                  key={index}
+                  className="flex items-start p-6 bg-gray-50 rounded-lg"
+                >
+                  {info.href ? (
+                    <a
+                      href={info.href}
+                      className="flex items-start w-full"
+                    >
+                      <div className="flex-shrink-0 p-3 bg-blue-100 rounded-lg">
+                        <info.icon className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-lg font-semibold text-gray-900">
+                          {info.title}
+                        </h4>
+                        <p className="text-gray-700 font-medium">
+                          {info.content}
+                        </p>
+                        <p className="text-gray-600 text-sm">{info.description}</p>
+                      </div>
+                    </a>
+                  ) : (
+                    <>
+                      <div className="flex-shrink-0 p-3 bg-blue-100 rounded-lg">
+                        <info.icon className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-lg font-semibold text-gray-900">
+                          {info.title}
+                        </h4>
+                        <p className="text-gray-700 font-medium">
+                          {info.content}
+                        </p>
+                        <p className="text-gray-600 text-sm">{info.description}</p>
+                      </div>
+                    </>
+                  )}
                 </div>
               ))}
             </div>
 
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                <Clock className="h-5 w-5 mr-2 text-blue-600" />
-                Godziny otwarcia
-              </h4>
-              <div className="space-y-2">
-                {schedule.map((item, index) => (
-                  <div key={index} className="flex justify-between">
-                    <span className="text-gray-700">{item.day}</span>
-                    <span className={`font-medium ${
-                      item.hours === 'Zamknięte' ? 'text-red-600' : 'text-gray-900'
-                    }`}>
-                      {item.hours}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-              <h5 className="font-semibold text-blue-900 mb-2">Dane bankowe:</h5>
-              <p className="text-blue-800 text-sm">
-                ING Bank Śląski<br />
-                78 1050 1416 1000 0090 8500 2203
-              </p>
+              <h5 className="font-semibold text-blue-900 mb-3 text-center">
+                Dane bankowe:
+              </h5>
+              <div className="text-center">
+                <p className="text-blue-800 text-sm mb-2">ING Bank Śląski</p>
+                <button
+                  onClick={copyAccountNumber}
+                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors duration-200"
+                  title="Kliknij aby skopiować numer konta"
+                >
+                  <span className="text-blue-800 text-sm">
+                    78 1050 1416 1000 0090 8500 2203
+                  </span>
+                  <Copy className="h-4 w-4" />
+                </button>
+                {copied && (
+                  <p className="text-green-600 text-xs mt-1">Skopiowano!</p>
+                )}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Map placeholder */}
+        {/* Map */}
         <div className="mt-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Jak do nas dotrzeć
           </h3>
-          <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-            <div className="text-center text-gray-600">
-              <MapPin className="h-12 w-12 mx-auto mb-4" />
-              <p className="text-lg font-medium">ul. Karczówkowska 11, 25-019 Kielce</p>
-              <p className="text-sm">Mapa Google będzie dostępna wkrótce</p>
-            </div>
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.123456789!2d20.6286!3d50.8703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471827f8b1234567%3A0x1234567890abcdef!2sKarczówkowska%2011%2C%2025-019%20Kielce!5e0!3m2!1spl!2spl!4v1234567890123!5m2!1spl!2spl"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Lokalizacja Centrum Sensus"
+            ></iframe>
+          </div>
+          <div className="mt-4 text-center">
+            <a
+              href="https://maps.google.com/?q=Karczówkowska+11,+25-019+Kielce"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+            >
+              <MapPin className="h-4 w-4 mr-2" />
+              Otwórz w Google Maps
+            </a>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

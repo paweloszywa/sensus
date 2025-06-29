@@ -1,4 +1,4 @@
-import { Heart, Star, Users } from 'lucide-react'
+import { Heart, Star, Users } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -8,16 +8,17 @@ export default function Hero() {
           {/* Text Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Centrum Terapii i 
+              Centrum Terapii i
               <span className="text-primary-500"> Wspomagania</span>
               <br />
               <span className="text-primary-500">Rozwoju Dziecka</span>
             </h1>
-            
+
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Profesjonalna pomoc terapeutyczna dla dzieci w Kielcach. 
-              Specjalizujemy się w integracji sensorycznej, terapii ręki 
-              i kompleksowym wspomaganiu rozwoju.
+              Profesjonalna pomoc terapeutyczna dla dzieci w Kielcach.
+              Specjalizujemy się w integracji sensorycznej, przetwarzaniu
+              słuchowym metodą Warnkego, terapii ręki, terapii pedagogicznej
+              oraz kompleksowym wspomaganiu rozwoju.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -41,8 +42,8 @@ export default function Hero() {
                 <div className="flex justify-center mb-2">
                   <Heart className="h-8 w-8 text-secondary-300" />
                 </div>
-                <div className="text-2xl font-bold text-gray-900">500+</div>
-                <div className="text-sm text-gray-600">Zadowolonych dzieci</div>
+                <div className="text-2xl font-bold text-gray-900">100%</div>
+                <div className="text-sm text-gray-600">Indywidualne podejście</div>
               </div>
               <div className="text-center">
                 <div className="flex justify-center mb-2">
@@ -77,5 +78,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
