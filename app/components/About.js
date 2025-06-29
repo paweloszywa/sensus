@@ -40,7 +40,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img
-              src="/images/Zdjęcie WhatsApp 2025-06-27 o 21.36.44_bb4064e7.jpg"
+              src="/sensus/images/10.jpg"
               alt="Wnętrze centrum terapii Sensus"
               className="rounded-lg shadow-lg w-full h-96 object-cover"
             />
