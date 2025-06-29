@@ -74,8 +74,8 @@ export default function Contact() {
                       href={info.href}
                       className="flex items-start w-full"
                     >
-                      <div className="flex-shrink-0 p-3 bg-blue-100 rounded-lg">
-                        <info.icon className="h-6 w-6 text-blue-600" />
+                      <div className="flex-shrink-0 p-3 bg-primary-100 rounded-lg">
+                        <info.icon className="h-6 w-6 text-primary-600" />
                       </div>
                       <div className="ml-4">
                         <h4 className="text-lg font-semibold text-gray-900">
@@ -89,8 +89,8 @@ export default function Contact() {
                     </a>
                   ) : (
                     <>
-                      <div className="flex-shrink-0 p-3 bg-blue-100 rounded-lg">
-                        <info.icon className="h-6 w-6 text-blue-600" />
+                      <div className="flex-shrink-0 p-3 bg-primary-100 rounded-lg">
+                        <info.icon className="h-6 w-6 text-primary-600" />
                       </div>
                       <div className="ml-4">
                         <h4 className="text-lg font-semibold text-gray-900">
@@ -107,18 +107,18 @@ export default function Contact() {
               ))}
             </div>
 
-            <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-              <h5 className="font-semibold text-blue-900 mb-3 text-center">
+            <div className="mt-6 p-4 bg-primary-50 border border-primary-200 rounded-lg">
+              <h5 className="font-semibold text-primary-800 mb-3 text-center">
                 Dane bankowe:
               </h5>
               <div className="text-center">
-                <p className="text-blue-800 text-sm mb-2">ING Bank Śląski</p>
+                <p className="text-primary-700 text-sm mb-2">ING Bank Śląski</p>
                 <button
                   onClick={copyAccountNumber}
-                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors duration-200"
+                  className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 transition-colors duration-200"
                   title="Kliknij aby skopiować numer konta"
                 >
-                  <span className="text-blue-800 text-sm">
+                  <span className="text-primary-700 text-sm">
                     78 1050 1416 1000 0090 8500 2203
                   </span>
                   <Copy className="h-4 w-4" />
@@ -153,7 +153,7 @@ export default function Contact() {
               href="https://maps.google.com/?q=Karczówkowska+11,+25-019+Kielce"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+              className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
             >
               <MapPin className="h-4 w-4 mr-2" />
               Otwórz w Google Maps

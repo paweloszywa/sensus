@@ -1,9 +1,19 @@
 'use client'
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Menu, X, Phone } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -18,16 +28,22 @@ export default function Header() {
   ]
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+    <header className={`fixed top-0 left-0 right-0 bg-white shadow-md z-50 transition-all duration-300 ${
+      isScrolled ? 'py-2' : 'py-4'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className={`flex justify-between items-center transition-all duration-300 ${
+          isScrolled ? 'h-12' : 'h-20'
+        }`}>
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center">
               <img 
                 src="/images/logo1.png" 
                 alt="Sensus Logo" 
-                className="h-16 w-auto"
+                className={`w-auto transition-all duration-300 ${
+                  isScrolled ? 'h-10' : 'h-16'
+                }`}
               />
               {/* Ukryty tekst dla SEO */}
               <div className="sr-only">
@@ -37,17 +53,28 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {menuItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-700 hover:text-primary-500 px-3 py-2 text-base font-medium transition-colors duration-200"
-              >
-                {item.name}
-              </a>
-            ))}
-          </nav>
+          <div className="hidden md:flex items-center space-x-8">
+            {/* Phone number */}
+            <a
+              href="tel:516577126"
+              className="flex items-center text-primary-700 hover:text-primary-800 font-bold transition-all duration-200"
+            >
+              <Phone className="h-4 w-4 mr-2 text-primary-700" />
+              516 577 126
+            </a>
+            
+            <nav className="flex space-x-8">
+              {menuItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-700 hover:text-primary-500 px-3 py-2 text-base font-medium transition-colors duration-200"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </nav>
+          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -82,6 +109,14 @@ export default function Header() {
           </div>
         )}
       </div>
+      
+      {/* Floating phone button */}
+      <a
+        href="tel:516577126"
+        className="fixed bottom-6 right-6 bg-accent-400 hover:bg-accent-500 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 md:hidden"
+      >
+        <Phone className="h-6 w-6" />
+      </a>
     </header>
   )
 }

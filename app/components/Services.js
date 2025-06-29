@@ -136,7 +136,7 @@ export default function Services() {
               className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-200"
             >
               <div className="flex justify-center mb-4">
-                <service.icon className="h-12 w-12 text-blue-600" />
+                <service.icon className="h-12 w-12 text-secondary-300" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3 text-center">
                 {service.title}
@@ -150,7 +150,7 @@ export default function Services() {
                     key={detailIndex}
                     className="flex items-center text-sm text-gray-600"
                   >
-                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 bg-primary-500 rounded-full mr-2 flex-shrink-0"></div>
                     {detail}
                   </li>
                 ))}
@@ -162,7 +162,7 @@ export default function Services() {
         <div className="text-center mt-12">
           <a
             href="#contact"
-            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
+            className="inline-block bg-primary-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-600 transition-colors duration-200"
           >
             Skontaktuj się z nami
           </a>

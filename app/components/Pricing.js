@@ -70,13 +70,13 @@ export default function Pricing() {
               key={index}
               className={`relative rounded-lg border-2 p-8 ${
                 plan.popular
-                  ? "border-blue-600 bg-blue-50"
+                  ? "border-primary-500 bg-primary-50"
                   : "border-gray-200 bg-white"
               }`}
             >
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center">
+                  <span className="bg-primary-500 text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center">
                     <Star className="h-4 w-4 mr-1" />
                     Najpopularniejsze
                   </span>
@@ -113,7 +113,7 @@ export default function Pricing() {
                 href="#contact"
                 className={`block w-full text-center py-3 px-6 rounded-lg font-semibold transition-colors duration-200 ${
                   plan.popular
-                    ? "bg-blue-600 text-white hover:bg-blue-700"
+                    ? "bg-primary-500 text-white hover:bg-primary-600"
                     : "bg-gray-100 text-gray-900 hover:bg-gray-200"
                 }`}
               >
