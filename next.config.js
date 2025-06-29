@@ -2,6 +2,8 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  basePath: '/sensus',
+  assetPrefix: '/sensus',
   images: {
     unoptimized: true
   },
