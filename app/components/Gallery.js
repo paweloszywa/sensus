@@ -8,82 +8,82 @@ export default function Gallery() {
 
   const images = [
     {
-      src: "/images/1.jpg",
+      src: "/sensus/images/1.jpg",
       alt: "Sala terapii - widok 1",
       category: "Wnętrza",
     },
     {
-      src: "/images/2.jpg",
+      src: "/sensus/images/2.jpg",
       alt: "Sala terapii - widok 2",
       category: "Wnętrza",
     },
     {
-      src: "/images/3.jpg",
+      src: "/sensus/images/3.jpg",
       alt: "Sprzęt terapeutyczny - widok 1",
       category: "Sprzęt",
     },
     {
-      src: "/images/5.jpg",
+      src: "/sensus/images/5.jpg",
       alt: "Sprzęt terapeutyczny - widok 2",
       category: "Sprzęt",
     },
     {
-      src: "/images/6.jpg",
+      src: "/sensus/images/6.jpg",
       alt: "Centrum terapii - pomieszczenia",
       category: "Wnętrza",
     },
     {
-      src: "/images/7.jpg",
+      src: "/sensus/images/7.jpg",
       alt: "Materiały i narzędzia terapeutyczne",
       category: "Sprzęt",
     },
     {
-      src: "/images/8.jpg",
+      src: "/sensus/images/8.jpg",
       alt: "Sala do ćwiczeń",
       category: "Wnętrza",
     },
     {
-      src: "/images/9.jpg",
+      src: "/sensus/images/9.jpg",
       alt: "Specjalistyczny sprzęt",
       category: "Sprzęt",
     },
     {
-      src: "/images/10.jpg",
+      src: "/sensus/images/10.jpg",
       alt: "Pokój terapeutyczny",
       category: "Wnętrza",
     },
     {
-      src: "/images/11.jpg",
+      src: "/sensus/images/11.jpg",
       alt: "Wyposażenie centrum",
       category: "Sprzęt",
     },
     {
-      src: "/images/12.jpg",
+      src: "/sensus/images/12.jpg",
       alt: "Przestrzeń terapeutyczna",
       category: "Wnętrza",
     },
     {
-      src: "/images/13.jpg",
+      src: "/sensus/images/13.jpg",
       alt: "Narzędzia do terapii",
       category: "Sprzęt",
     },
     {
-      src: "/images/14.jpg",
+      src: "/sensus/images/14.jpg",
       alt: "Centrum Sensus - wnętrze",
       category: "Wnętrza",
     },
     {
-      src: "/images/15.jpg",
+      src: "/sensus/images/15.jpg",
       alt: "Profesjonalny sprzęt",
       category: "Sprzęt",
     },
     {
-      src: "/images/16.jpg",
+      src: "/sensus/images/16.jpg",
       alt: "Sala rehabilitacyjna",
       category: "Wnętrza",
     },
     {
-      src: "/images/17.jpg",
+      src: "/sensus/images/17.jpg",
       alt: "Dodatkowe wyposażenie",
       category: "Sprzęt",
     },

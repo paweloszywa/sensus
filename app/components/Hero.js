@@ -66,7 +66,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative z-10">
               <img
-                src="/images/top.jpg"
+                src="/sensus/images/top.jpg"
                 alt="Centrum Terapii Sensus - Wspomaganie rozwoju dziecka"
                 className="rounded-lg shadow-2xl w-full h-auto object-cover"
               />

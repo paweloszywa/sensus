@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
               <img
-                src="/images/logo1.png"
+                src="/sensus/images/logo1.png"
                 alt="Sensus Logo"
                 className="h-16 w-auto rounded-lg bg-white p-2"
               />
