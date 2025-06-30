@@ -39,7 +39,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center">
               <img 
-                src="/sensus/images/logo1.png" 
+                src="/images/logo1.png" 
                 alt="Sensus Logo" 
                 className={`w-auto transition-all duration-300 ${
                   isScrolled ? 'h-10' : 'h-16'

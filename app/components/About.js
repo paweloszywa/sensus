@@ -40,7 +40,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img
-              src="/sensus/images/10.jpg"
+              src="/images/10.jpg"
               alt="Wnętrze centrum terapii Sensus"
               className="rounded-lg shadow-lg w-full h-96 object-cover"
             />
