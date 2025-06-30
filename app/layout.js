@@ -4,6 +4,9 @@ export const metadata = {
   title: 'Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka',
   description: 'Profesjonalne centrum terapii w Kielcach oferujące integrację sensoryczną, terapię ręki, trening słuchowy metodą Warnkego i wiele więcej.',
   keywords: 'terapia dziecka, integracja sensoryczna, Kielce, terapia ręki, trening słuchowy',
+  verification: {
+    google: 'UOAnAPOAOz4yXPwSa_snVkxD-W9i-p0JBnqQFika9Tk',
+  },
 }
 
 export default function RootLayout({ children }) {
