@@ -1,9 +1,9 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka',
-  description: 'Profesjonalne centrum terapii w Kielcach oferujące integrację sensoryczną, terapię ręki, trening słuchowy metodą Warnkego i wiele więcej.',
-  keywords: 'terapia dziecka, integracja sensoryczna, Kielce, terapia ręki, trening słuchowy',
+  title: 'Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka | Kielce',
+  description: 'Profesjonalne centrum terapii dziecka w Kielcach. Integracja sensoryczna, terapia ręki, trening słuchowy Warnkego, TUS. ul. Karczówkowska 11. Umów wizytę: 516 577 126',
+  keywords: 'terapia dziecka Kielce, integracja sensoryczna Kielce, terapia ręki Kielce, centrum terapii Kielce, Warnke Kielce, TUS Kielce, wspomaganie rozwoju dziecka, terapeuta dziecięcy Kielce',
   verification: {
     google: 'UOAnAPOAOz4yXPwSa_snVkxD-W9i-p0JBnqQFika9Tk',
   },

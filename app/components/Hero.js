@@ -15,10 +15,10 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Profesjonalna pomoc terapeutyczna dla dzieci w Kielcach.
-              Specjalizujemy się w integracji sensorycznej, przetwarzaniu
-              słuchowym metodą Warnkego, terapii ręki, terapii pedagogicznej
-              oraz kompleksowym wspomaganiu rozwoju.
+              Profesjonalne centrum terapii dziecka w Kielcach.
+              Specjalizujemy się w integracji sensorycznej, treningu słuchowym metodą Warnkego, 
+              terapii ręki, terapii pedagogicznej oraz kompleksowym wspomaganiu rozwoju dziecka. 
+              Zapraszamy dzieci z Kielc i okolic - ul. Karczówkowska 11.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
