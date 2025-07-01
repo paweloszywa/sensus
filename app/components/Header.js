@@ -1,53 +1,60 @@
-'use client'
-import { useState, useEffect } from 'react'
-import { Menu, X, Phone } from 'lucide-react'
+"use client";
+import { useState, useEffect } from "react";
+import { Menu, X, Phone } from "lucide-react";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
+      setIsScrolled(window.scrollY > 50);
+    };
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const menuItems = [
-    { name: 'O nas', href: '#about' },
-    { name: 'Oferta', href: '#services' },
-    { name: 'Cennik', href: '#pricing' },
-    { name: 'Galeria', href: '#gallery' },
-    { name: 'Kontakt', href: '#contact' }
-  ]
+    { name: "O nas", href: "#about" },
+    { name: "Oferta", href: "#services" },
+    { name: "Cennik", href: "#pricing" },
+    { name: "Galeria", href: "#gallery" },
+    { name: "Kontakt", href: "#contact" },
+  ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 bg-white shadow-md z-50 transition-all duration-300 ${
-      isScrolled ? 'py-2' : 'py-4'
-    }`}>
+    <header
+      className={`fixed top-0 left-0 right-0 bg-white shadow-md z-50 transition-all duration-300 ${
+        isScrolled ? "py-2" : "py-4"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center transition-all duration-300 ${
-          isScrolled ? 'h-12' : 'h-20'
-        }`}>
+        <div
+          className={`flex justify-between items-center transition-all duration-300 ${
+            isScrolled ? "h-12" : "h-20"
+          }`}
+        >
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center">
-              <img 
-                src="/images/logo1.png" 
-                alt="Sensus Logo" 
+              <img
+                src="/images/logo3.png"
+                alt="Sensus Logo"
                 className={`w-auto transition-all duration-300 ${
-                  isScrolled ? 'h-10' : 'h-16'
+                  isScrolled ? "h-10" : "h-16"
                 }`}
               />
               {/* Ukryty tekst dla SEO */}
               <div className="sr-only">
-                <h1>Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka w Kielcach</h1>
+                <h1>
+                  Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka w
+                  Kielcach
+                </h1>
               </div>
             </a>
           </div>
@@ -62,7 +69,7 @@ export default function Header() {
               <Phone className="h-4 w-4 mr-2 text-primary-700" />
               516 577 126
             </a>
-            
+
             <nav className="flex space-x-8">
               {menuItems.map((item) => (
                 <a
@@ -109,7 +116,7 @@ export default function Header() {
           </div>
         )}
       </div>
-      
+
       {/* Floating phone button */}
       <a
         href="tel:516577126"
@@ -118,5 +125,5 @@ export default function Header() {
         <Phone className="h-6 w-6" />
       </a>
     </header>
-  )
+  );
 }
