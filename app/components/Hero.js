@@ -15,10 +15,11 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Profesjonalne centrum terapii dziecka w Kielcach.
-              Specjalizujemy się w integracji sensorycznej, treningu słuchowym metodą Warnkego, 
-              terapii ręki, terapii pedagogicznej oraz kompleksowym wspomaganiu rozwoju dziecka. 
-              Zapraszamy dzieci z Kielc i okolic - ul. Karczówkowska 11.
+              Profesjonalne centrum terapii dziecka w Kielcach. Specjalizujemy
+              się w integracji sensorycznej, treningu słuchowym metodą Warnkego,
+              terapii ręki, terapii pedagogicznej oraz kompleksowym wspomaganiu
+              rozwoju dziecka. Zapraszamy dzieci z Kielc i okolic - ul.
+              Karczówkowska 11.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -43,7 +44,9 @@ export default function Hero() {
                   <Heart className="h-8 w-8 text-secondary-300" />
                 </div>
                 <div className="text-2xl font-bold text-gray-900">100%</div>
-                <div className="text-sm text-gray-600">Indywidualne podejście</div>
+                <div className="text-sm text-gray-600">
+                  Indywidualne podejście
+                </div>
               </div>
               <div className="text-center">
                 <div className="flex justify-center mb-2">
@@ -66,7 +69,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative z-10">
               <img
-                src="/images/top.jpg"
+                src="/images/16.jpg"
                 alt="Centrum Terapii Sensus - Wspomaganie rozwoju dziecka"
                 className="rounded-lg shadow-2xl w-full h-auto object-cover"
               />
