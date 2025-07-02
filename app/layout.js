@@ -1,6 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL('https://sensuskielce.pl'),
   title: "Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka | Kielce",
   description:
     "Profesjonalne centrum terapii dziecka w Kielcach. Integracja sensoryczna, terapia ręki, trening słuchowy Warnkego, TUS. ul. Karczówkowska 11. Umów wizytę: 516 577 126",
