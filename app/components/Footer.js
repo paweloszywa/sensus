@@ -40,12 +40,12 @@ export default function Footer() {
                 <span>Profesjonalne terapie dla dzieci w Kielcach</span>
               </div>
             </div>
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-gray-200 mb-6 leading-relaxed">
               Profesjonalne centrum terapii i wspomagania rozwoju dziecka w
               Kielcach. Pomagamy dzieciom rozwijać swój potencjał poprzez
               specjalistyczne terapie.
             </p>
-            <div className="flex items-center text-sm text-gray-300">
+            <div className="flex items-center text-sm text-gray-200">
               <Heart className="h-4 w-4 mr-2 text-secondary-300" />
               Stworzone z pasją dla dzieci
             </div>
@@ -53,13 +53,13 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Nawigacja</h3>
+            <h4 className="text-lg font-semibold mb-4">Nawigacja</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                    className="text-gray-200 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -70,17 +70,17 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Nasze usługi</h3>
+            <h4 className="text-lg font-semibold mb-4">Nasze usługi</h4>
             <ul className="space-y-2">
               {services.slice(0, 6).map((service, index) => (
-                <li key={index} className="text-gray-300 text-sm">
+                <li key={index} className="text-gray-200 text-sm">
                   {service}
                 </li>
               ))}
               <li className="text-white text-sm font-medium">
                 <a
                   href="#services"
-                  className="hover:text-gray-300 transition-colors duration-200"
+                  className="hover:text-gray-200 transition-colors duration-200"
                 >
                   Zobacz wszystkie usługi →
                 </a>
@@ -90,7 +90,7 @@ export default function Footer() {
 
           {/* Contact info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
+            <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-3 text-accent-400 flex-shrink-0" />
@@ -101,7 +101,7 @@ export default function Footer() {
                   >
                     516 577 126
                   </a>
-                  <div className="text-gray-300 text-sm">
+                  <div className="text-gray-200 text-sm">
                     Pon-Nd: 8:00-21:00
                   </div>
                 </div>
@@ -112,26 +112,26 @@ export default function Footer() {
                 <div>
                   <a
                     href="mailto:sensuskielce@gmail.com"
-                    className="text-white hover:text-gray-300 transition-colors duration-200"
+                    className="text-white hover:text-gray-200 transition-colors duration-200"
                   >
                     sensuskielce@gmail.com
                   </a>
-                  <div className="text-gray-300 text-sm">Odpowiadamy w 24h</div>
+                  <div className="text-gray-200 text-sm">Odpowiadamy w 24h</div>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <MapPin className="h-4 w-4 mr-3 text-gray-300 flex-shrink-0 mt-1" />
+                <MapPin className="h-4 w-4 mr-3 text-gray-200 flex-shrink-0 mt-1" />
                 <div>
                   <a
                     href="https://maps.google.com/?q=Karczówkowska+11,+25-019+Kielce"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-gray-300 transition-colors duration-200"
+                    className="text-white hover:text-gray-200 transition-colors duration-200"
                   >
                     ul. Karczówkowska 11
                   </a>
-                  <div className="text-gray-300 text-sm">25-019 Kielce</div>
+                  <div className="text-gray-200 text-sm">25-019 Kielce</div>
                 </div>
               </div>
             </div>
@@ -141,13 +141,13 @@ export default function Footer() {
         {/* Bottom section */}
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="text-center">
-            <div className="text-gray-300 text-sm mb-4">
+            <div className="text-gray-200 text-sm mb-4">
               © {currentYear} Sensus - Centrum Terapii i Wspomagania Rozwoju
               Dziecka. Wszystkie prawa zastrzeżone.
             </div>
           </div>
 
-          <div className="mt-4 text-center text-gray-500 text-xs">
+          <div className="mt-4 text-center text-gray-300 text-xs">
             <p>
               Centrum powstało z myślą o dzieciach potrzebujących wsparcia w
               rozwoju. Każde dziecko zasługuje na profesjonalną pomoc i

@@ -1,4 +1,5 @@
 import { Heart, Star, Users } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -67,11 +68,14 @@ export default function Hero() {
 
           {/* Image */}
           <div className="relative">
-            <div className="relative z-10">
-              <img
+            <div className="relative z-10 aspect-[4/5] lg:aspect-[3/4]">
+              <Image
                 src="/images/top.jpg"
                 alt="Centrum Terapii Sensus - Wspomaganie rozwoju dziecka"
-                className="rounded-lg shadow-2xl w-full h-auto object-cover"
+                fill
+                className="rounded-lg shadow-2xl object-cover"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
             {/* Background decorations */}
