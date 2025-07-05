@@ -7,14 +7,14 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Centrum Terapii i
               <span className="text-primary-500"> Wspomagania</span>
               <br />
               <span className="text-primary-500">Rozwoju Dziecka</span>
-            </h1>
+            </h2>
 
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
               Profesjonalne centrum terapii dziecka w Kielcach. Specjalizujemy
               się w integracji sensorycznej, treningu słuchowym metodą Warnkego,
               terapii ręki, terapii pedagogicznej oraz kompleksowym wspomaganiu

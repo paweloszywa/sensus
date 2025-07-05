@@ -123,7 +123,7 @@ export default function Services() {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Nasza oferta
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Oferujemy szeroki zakres specjalistycznych terapii dostosowanych do
             indywidualnych potrzeb każdego dziecka.
           </p>

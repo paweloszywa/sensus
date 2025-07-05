@@ -34,7 +34,7 @@ export default function About() {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             O naszym centrum
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Nasze centrum oferuje profesjonalną pomoc terapeutyczną, prowadzoną
             z pasją i zaangażowaniem w rozwoju dzieci i pokonywaniu trudności.
           </p>
@@ -52,7 +52,7 @@ export default function About() {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Profesjonalna pomoc dla każdego dziecka
             </h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <p className="text-gray-700 mb-6 leading-relaxed">
               Nasze centrum powstało z myślą o dzieciach, które potrzebują
               wsparcia w rozwoju. Oferujemy nowoczesne metody terapeutyczne w
               przyjaznym, bezpiecznym środowisku. Zapewniamy wysoką jakość usług

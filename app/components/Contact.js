@@ -50,7 +50,7 @@ export default function Contact() {
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Kontakt
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Skontaktuj się z nami, aby umówić wizytę lub dowiedzieć się więcej o
             naszych usługach. Chętnie odpowiemy na wszystkie pytania.
           </p>
@@ -108,9 +108,9 @@ export default function Contact() {
             </div>
 
             <div className="mt-6 p-4 bg-primary-50 border border-primary-200 rounded-lg">
-              <h5 className="font-semibold text-primary-800 mb-3 text-center">
+              <h4 className="font-semibold text-primary-800 mb-3 text-center">
                 Dane bankowe:
-              </h5>
+              </h4>
               <div className="text-center">
                 <p className="text-primary-700 text-sm mb-2">ING Bank Śląski</p>
                 <button
