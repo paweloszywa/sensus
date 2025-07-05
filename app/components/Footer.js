@@ -36,16 +36,16 @@ export default function Footer() {
               />
               {/* Ukryty tekst dla SEO */}
               <div className="sr-only">
-                <h1>Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka</h1>
-                <p>Profesjonalne terapie dla dzieci w Kielcach</p>
+                <span>Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka</span>
+                <span>Profesjonalne terapie dla dzieci w Kielcach</span>
               </div>
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
+            <p className="text-gray-300 mb-6 leading-relaxed">
               Profesjonalne centrum terapii i wspomagania rozwoju dziecka w
               Kielcach. Pomagamy dzieciom rozwijać swój potencjał poprzez
               specjalistyczne terapie.
             </p>
-            <div className="flex items-center text-sm text-gray-400">
+            <div className="flex items-center text-sm text-gray-300">
               <Heart className="h-4 w-4 mr-2 text-secondary-300" />
               Stworzone z pasją dla dzieci
             </div>
@@ -53,13 +53,13 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Nawigacja</h4>
+            <h3 className="text-lg font-semibold mb-4">Nawigacja</h3>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                    className="text-gray-300 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -70,10 +70,10 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Nasze usługi</h4>
+            <h3 className="text-lg font-semibold mb-4">Nasze usługi</h3>
             <ul className="space-y-2">
               {services.slice(0, 6).map((service, index) => (
-                <li key={index} className="text-gray-400 text-sm">
+                <li key={index} className="text-gray-300 text-sm">
                   {service}
                 </li>
               ))}
@@ -90,7 +90,7 @@ export default function Footer() {
 
           {/* Contact info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
+            <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-3 text-accent-400 flex-shrink-0" />
@@ -101,7 +101,7 @@ export default function Footer() {
                   >
                     516 577 126
                   </a>
-                  <div className="text-gray-400 text-sm">
+                  <div className="text-gray-300 text-sm">
                     Pon-Nd: 8:00-21:00
                   </div>
                 </div>
@@ -116,7 +116,7 @@ export default function Footer() {
                   >
                     sensuskielce@gmail.com
                   </a>
-                  <div className="text-gray-400 text-sm">Odpowiadamy w 24h</div>
+                  <div className="text-gray-300 text-sm">Odpowiadamy w 24h</div>
                 </div>
               </div>
 
@@ -131,7 +131,7 @@ export default function Footer() {
                   >
                     ul. Karczówkowska 11
                   </a>
-                  <div className="text-gray-400 text-sm">25-019 Kielce</div>
+                  <div className="text-gray-300 text-sm">25-019 Kielce</div>
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function Footer() {
         {/* Bottom section */}
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="text-center">
-            <div className="text-gray-400 text-sm mb-4">
+            <div className="text-gray-300 text-sm mb-4">
               © {currentYear} Sensus - Centrum Terapii i Wspomagania Rozwoju
               Dziecka. Wszystkie prawa zastrzeżone.
             </div>

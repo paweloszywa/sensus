@@ -44,7 +44,7 @@ export default function Header() {
             <a href="#" className="flex items-center">
               <img
                 src="/images/logo3.png"
-                alt="Sensus Logo"
+                alt="Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka w Kielcach - logo"
                 className={`w-auto transition-all duration-300 ${
                   isScrolled ? "h-10" : "h-16"
                 }`}
@@ -88,6 +88,8 @@ export default function Header() {
             <button
               onClick={toggleMenu}
               className="text-gray-700 hover:text-primary-500 focus:outline-none focus:text-primary-500"
+              aria-label={isMenuOpen ? "Zamknij menu" : "Otwórz menu"}
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -121,6 +123,7 @@ export default function Header() {
       <a
         href="tel:516577126"
         className="fixed bottom-6 right-6 bg-accent-400 hover:bg-accent-500 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 md:hidden"
+        aria-label="Zadzwoń do centrum Sensus - 516 577 126"
       >
         <Phone className="h-6 w-6" />
       </a>
