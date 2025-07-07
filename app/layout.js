@@ -109,38 +109,18 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        {/* Favicon - główny */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        {/* Favicon - Complete Set for Better Google Recognition */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#4F46E5" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        
-        {/* Favicon PNG */}
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/images/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/images/favicon-16x16.png"
-        />
-        
-        {/* Apple Touch Icon */}
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/images/favicon-32x32.png"
-        />
         
         {/* Microsoft aplikacje */}
         <meta name="msapplication-TileColor" content="#4F46E5" />
-        <meta name="theme-color" content="#4F46E5" />
-        
-        {/* Manifest */}
-        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
         
         <script
           type="application/ld+json"
