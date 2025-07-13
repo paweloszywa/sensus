@@ -124,7 +124,7 @@ export default function Footer() {
                 <MapPin className="h-4 w-4 mr-3 text-gray-200 flex-shrink-0 mt-1" />
                 <div>
                   <a
-                    href="https://maps.google.com/?q=Karczówkowska+11,+25-019+Kielce"
+                    href="https://maps.app.goo.gl/o2edU7VFSBTyoNTS6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-gray-200 transition-colors duration-200"

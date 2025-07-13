@@ -33,7 +33,7 @@ export default function Contact() {
       title: "Adres",
       content: "ul. Karczówkowska 11, piętro 1",
       description: "25-019 Kielce | Bezpłatne miejsca parkingowe",
-      href: "https://maps.google.com/?q=Karczówkowska+11,+25-019+Kielce",
+      href: "https://maps.app.goo.gl/o2edU7VFSBTyoNTS6",
     },
     {
       icon: Building2,
@@ -150,7 +150,7 @@ export default function Contact() {
           </div>
           <div className="mt-4 text-center">
             <a
-              href="https://maps.google.com/?q=Karczówkowska+11,+25-019+Kielce"
+              href="https://maps.app.goo.gl/o2edU7VFSBTyoNTS6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium"
