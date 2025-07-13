@@ -47,8 +47,8 @@ export default function RootLayout({ children }) {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 50.8703,
-      longitude: 20.6286,
+      latitude: 50.8677709,
+      longitude: 20.6160554,
     },
     openingHours: ["Mo-Su 08:00-21:00"],
     priceRange: "$$",

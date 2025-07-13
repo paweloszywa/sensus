@@ -138,14 +138,14 @@ export default function Contact() {
           </h3>
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.123456789!2d20.6286!3d50.8703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471827f8b1234567%3A0x1234567890abcdef!2sKarczówkowska%2011%2C%2025-019%20Kielce!5e0!3m2!1spl!2spl!4v1234567890123!5m2!1spl!2spl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236.2!2d20.6160554!3d50.8677709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471827ace91271e1%3A0x7e2411d62fc0c072!2sSensus%20Centrum%20Terapii%20i%20Wspomagania%20Rozwoju%20Dziecka!5e0!3m2!1spl!2spl!4v1689012345678!5m2!1spl!2spl"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Lokalizacja Centrum Sensus"
+              title="Sensus Centrum Terapii i Wspomagania Rozwoju Dziecka - ul. Karczówkowska 11, Kielce"
             ></iframe>
           </div>
           <div className="mt-4 text-center">
