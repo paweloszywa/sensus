@@ -57,7 +57,7 @@ export default function About() {
               wsparcia w rozwoju. Oferujemy nowoczesne metody terapeutyczne w
               przyjaznym, bezpiecznym środowisku. Zapewniamy wysoką jakość usług
               dzięki stałemu podnoszeniu kwalifikacji i śledzeniu najnowszych
-              trendów w terapii.
+              badań naukowych.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Wierzymy, że każde dziecko ma potencjał do rozwoju i naszą misją
