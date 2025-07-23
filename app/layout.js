@@ -2,7 +2,8 @@ import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://sensuskielce.pl"),
-  title: "Integracja Sensoryczna i Trening Warnkego Kielce | Sensus - Centrum Terapii Dziecka",
+  title:
+    "Sensus - Centrum Terapii Dziecka | Integracja Sensoryczna i Trening Warnkego Kielce",
   description:
     "Specjalistyczna integracja sensoryczna i trening słuchowy metodą Warnkego w Kielcach. Profesjonalna terapia dzieci z trudnościami sensorycznymi i słuchowymi. Umów wizytę: 516 577 126",
   keywords:
@@ -22,7 +23,8 @@ export const metadata = {
     type: "website",
     locale: "pl_PL",
     url: "https://sensuskielce.pl",
-    title: "Integracja Sensoryczna i Trening Warnkego Kielce | Sensus - Centrum Terapii Dziecka",
+    title:
+      "Integracja Sensoryczna i Trening Warnkego Kielce | Sensus - Centrum Terapii Dziecka",
     description:
       "Specjalistyczna integracja sensoryczna i trening słuchowy metodą Warnkego w Kielcach. Profesjonalna terapia dzieci z trudnościami sensorycznymi i słuchowymi.",
     siteName: "Sensus Kielce",
@@ -90,32 +92,38 @@ export default function RootLayout({ children }) {
       itemListElement: [
         {
           "@type": "Offer",
-          "@id": "https://sensuskielce.pl/#/schema/Service/integracja-sensoryczna",
+          "@id":
+            "https://sensuskielce.pl/#/schema/Service/integracja-sensoryczna",
           name: "Integracja Sensoryczna Kielce",
           category: "Terapia Integracji Sensorycznej",
           priceRange: "$$",
           availability: "https://schema.org/InStock",
           areaServed: {
             "@type": "City",
-            name: "Kielce"
+            name: "Kielce",
           },
           itemOffered: {
             "@type": "Service",
-            "@id": "https://sensuskielce.pl/#/schema/Service/integracja-sensoryczna",
+            "@id":
+              "https://sensuskielce.pl/#/schema/Service/integracja-sensoryczna",
             name: "Integracja Sensoryczna",
-            alternateName: ["SI Terapia", "Terapia Sensoryczna", "Integracja Sensoryczna dla dzieci"],
+            alternateName: [
+              "SI Terapia",
+              "Terapia Sensoryczna",
+              "Integracja Sensoryczna dla dzieci",
+            ],
             description:
               "Profesjonalna terapia integracji sensorycznej (SI) w Kielcach. Wspieramy dzieci w prawidłowym odbieraniu, przetwarzaniu i organizowaniu bodźców zmysłowych z otoczenia. Specjalistyczne podejście do zaburzeń przetwarzania sensorycznego.",
             provider: {
               "@type": "LocalBusiness",
-              "@id": "https://sensuskielce.pl/#/schema/LocalBusiness/1"
+              "@id": "https://sensuskielce.pl/#/schema/LocalBusiness/1",
             },
             serviceType: "Terapia Integracji Sensorycznej",
             serviceAudience: {
               "@type": "Audience",
-              audienceType: "Dzieci z zaburzeniami sensorycznymi"
-            }
-          }
+              audienceType: "Dzieci z zaburzeniami sensorycznymi",
+            },
+          },
         },
         {
           "@type": "Offer",
@@ -126,25 +134,30 @@ export default function RootLayout({ children }) {
           availability: "https://schema.org/InStock",
           areaServed: {
             "@type": "City",
-            name: "Kielce"
+            name: "Kielce",
           },
           itemOffered: {
             "@type": "Service",
             "@id": "https://sensuskielce.pl/#/schema/Service/trening-warnkego",
             name: "Trening Słuchowy Metodą Warnkego",
-            alternateName: ["Metoda Warnkego", "Warnke Kielce", "Trening Warnke", "Terapia Słuchu Warnke"],
+            alternateName: [
+              "Metoda Warnkego",
+              "Warnke Kielce",
+              "Trening Warnke",
+              "Terapia Słuchu Warnke",
+            ],
             description:
               "Trening słuchowy metodą Warnkego w Kielcach - innowacyjna metoda terapii słuchu skuteczna w leczeniu dysleksji, zaburzeń przetwarzania słuchowego APD i trudności w nauce. Profesjonalna diagnostyka i terapia Warnke.",
             provider: {
               "@type": "LocalBusiness",
-              "@id": "https://sensuskielce.pl/#/schema/LocalBusiness/1"
+              "@id": "https://sensuskielce.pl/#/schema/LocalBusiness/1",
             },
             serviceType: "Trening Słuchowy Warnke",
             serviceAudience: {
               "@type": "Audience",
-              audienceType: "Dzieci z dysleksją i zaburzeniami słuchu"
-            }
-          }
+              audienceType: "Dzieci z dysleksją i zaburzeniami słuchu",
+            },
+          },
         },
         {
           "@type": "Offer",
@@ -246,7 +259,8 @@ export default function RootLayout({ children }) {
               name: "Integracja Sensoryczna i Trening Warnkego Kielce | Sensus - Centrum Terapii Dziecka",
               description:
                 "Specjalistyczna integracja sensoryczna i trening słuchowy metodą Warnkego w Kielcach. Profesjonalna terapia dzieci z trudnościami sensorycznymi i słuchowymi. Umów wizytę: 516 577 126",
-              keywords: "integracja sensoryczna Kielce, trening Warnkego Kielce, terapia sensoryczna, metoda Warnkego",
+              keywords:
+                "integracja sensoryczna Kielce, trening Warnkego Kielce, terapia sensoryczna, metoda Warnkego",
               isPartOf: {
                 "@type": "WebSite",
                 "@id": "https://sensuskielce.pl/#/schema/WebSite/1",
@@ -279,34 +293,34 @@ export default function RootLayout({ children }) {
                   name: "Co to jest integracja sensoryczna?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Integracja sensoryczna to proces neurologiczny, w którym układ nerwowy odbiera, organizuje i interpretuje informacje zmysłowe z otoczenia. Terapia integracji sensorycznej w Kielcach pomaga dzieciom z trudnościami w przetwarzaniu bodźców sensorycznych."
-                  }
+                    text: "Integracja sensoryczna to proces neurologiczny, w którym układ nerwowy odbiera, organizuje i interpretuje informacje zmysłowe z otoczenia. Terapia integracji sensorycznej w Kielcach pomaga dzieciom z trudnościami w przetwarzaniu bodźców sensorycznych.",
+                  },
                 },
                 {
-                  "@type": "Question", 
+                  "@type": "Question",
                   name: "Czym jest trening słuchowy metodą Warnkego?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Trening Warnkego to innowacyjna metoda terapii słuchu skuteczna w leczeniu dysleksji, zaburzeń przetwarzania słuchowego APD i trudności w nauce. W Kielcach oferujemy profesjonalny trening metodą Warnkego dla dzieci."
-                  }
+                    text: "Trening Warnkego to innowacyjna metoda terapii słuchu skuteczna w leczeniu dysleksji, zaburzeń przetwarzania słuchowego APD i trudności w nauce. W Kielcach oferujemy profesjonalny trening metodą Warnkego dla dzieci.",
+                  },
                 },
                 {
                   "@type": "Question",
                   name: "Gdzie znajdę specjalistę od integracji sensorycznej w Kielcach?",
                   acceptedAnswer: {
-                    "@type": "Answer", 
-                    text: "Centrum Sensus w Kielcach przy ul. Karczówkowskiej 11 oferuje profesjonalną terapię integracji sensorycznej. Nasi specjaliści mają wieloletnie doświadczenie w pracy z dziećmi z zaburzeniami sensorycznymi."
-                  }
+                    "@type": "Answer",
+                    text: "Centrum Sensus w Kielcach przy ul. Karczówkowskiej 11 oferuje profesjonalną terapię integracji sensorycznej. Nasi specjaliści mają wieloletnie doświadczenie w pracy z dziećmi z zaburzeniami sensorycznymi.",
+                  },
                 },
                 {
                   "@type": "Question",
                   name: "Czy metoda Warnkego pomaga przy dysleksji?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Tak, trening słuchowy metodą Warnkego jest skuteczny w terapii dysleksji. Pomaga poprawić przetwarzanie słuchowe, koncentrację i umiejętności czytania. W Centrum Sensus w Kielcach oferujemy kompleksową diagnostykę i terapię Warnke."
-                  }
-                }
-              ]
+                    text: "Tak, trening słuchowy metodą Warnkego jest skuteczny w terapii dysleksji. Pomaga poprawić przetwarzanie słuchowe, koncentrację i umiejętności czytania. W Centrum Sensus w Kielcach oferujemy kompleksową diagnostykę i terapię Warnke.",
+                  },
+                },
+              ],
             }),
           }}
         />
@@ -318,26 +332,32 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              "@id": "https://sensuskielce.pl/#/schema/Service/integracja-sensoryczna-detailed",
+              "@id":
+                "https://sensuskielce.pl/#/schema/Service/integracja-sensoryczna-detailed",
               name: "Integracja Sensoryczna Kielce",
-              alternateName: ["SI Terapia Kielce", "Terapia Sensoryczna Kielce", "Integracja Sensoryczna dla dzieci Kielce"],
-              description: "Profesjonalna terapia integracji sensorycznej (SI) w Kielcach. Specjalistyczne podejście do zaburzeń przetwarzania sensorycznego u dzieci. Doświadczeni terapeuci, nowoczesne metody.",
+              alternateName: [
+                "SI Terapia Kielce",
+                "Terapia Sensoryczna Kielce",
+                "Integracja Sensoryczna dla dzieci Kielce",
+              ],
+              description:
+                "Profesjonalna terapia integracji sensorycznej (SI) w Kielcach. Specjalistyczne podejście do zaburzeń przetwarzania sensorycznego u dzieci. Doświadczeni terapeuci, nowoczesne metody.",
               provider: {
                 "@type": "LocalBusiness",
                 "@id": "https://sensuskielce.pl/#/schema/LocalBusiness/1",
-                name: "Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka"
+                name: "Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka",
               },
               areaServed: {
-                "@type": "City", 
-                name: "Kielce"
+                "@type": "City",
+                name: "Kielce",
               },
               serviceType: "Terapia Integracji Sensorycznej",
               category: "Terapia dzieci z zaburzeniami sensorycznymi",
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",
-                priceRange: "$$"
-              }
+                priceRange: "$$",
+              },
             }),
           }}
         />
@@ -348,27 +368,34 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Service", 
-              "@id": "https://sensuskielce.pl/#/schema/Service/trening-warnkego-detailed",
+              "@type": "Service",
+              "@id":
+                "https://sensuskielce.pl/#/schema/Service/trening-warnkego-detailed",
               name: "Trening Słuchowy Metodą Warnkego Kielce",
-              alternateName: ["Metoda Warnkego Kielce", "Warnke Kielce", "Trening Warnke Kielce", "Terapia Słuchu Warnke Kielce"],
-              description: "Trening słuchowy metodą Warnkego w Kielcach - skuteczna terapia dysleksji, zaburzeń przetwarzania słuchowego APD i trudności w nauce. Profesjonalna diagnostyka i kompleksowa terapia.",
+              alternateName: [
+                "Metoda Warnkego Kielce",
+                "Warnke Kielce",
+                "Trening Warnke Kielce",
+                "Terapia Słuchu Warnke Kielce",
+              ],
+              description:
+                "Trening słuchowy metodą Warnkego w Kielcach - skuteczna terapia dysleksji, zaburzeń przetwarzania słuchowego APD i trudności w nauce. Profesjonalna diagnostyka i kompleksowa terapia.",
               provider: {
                 "@type": "LocalBusiness",
-                "@id": "https://sensuskielce.pl/#/schema/LocalBusiness/1", 
-                name: "Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka"
+                "@id": "https://sensuskielce.pl/#/schema/LocalBusiness/1",
+                name: "Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka",
               },
               areaServed: {
                 "@type": "City",
-                name: "Kielce" 
+                name: "Kielce",
               },
               serviceType: "Trening Słuchowy Warnke",
               category: "Terapia dysleksji i zaburzeń słuchu",
               offers: {
                 "@type": "Offer",
-                availability: "https://schema.org/InStock", 
-                priceRange: "$$"
-              }
+                availability: "https://schema.org/InStock",
+                priceRange: "$$",
+              },
             }),
           }}
         />
