@@ -209,6 +209,7 @@ export default function RootLayout({ children }) {
           }}
         />
         {/* Favicon - Complete Set for Better Google Recognition */}
+        <link rel="canonical" href="https://sensuskielce.pl/" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
