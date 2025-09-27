@@ -96,7 +96,6 @@ export default function RootLayout({ children }) {
             "https://sensuskielce.pl/#/schema/Service/integracja-sensoryczna",
           name: "Integracja Sensoryczna Kielce",
           category: "Terapia Integracji Sensorycznej",
-          priceRange: "$$",
           availability: "https://schema.org/InStock",
           areaServed: {
             "@type": "City",
@@ -130,7 +129,6 @@ export default function RootLayout({ children }) {
           "@id": "https://sensuskielce.pl/#/schema/Service/trening-warnkego",
           name: "Trening Słuchowy Metodą Warnkego Kielce",
           category: "Trening Słuchowy Warnke",
-          priceRange: "$$",
           availability: "https://schema.org/InStock",
           areaServed: {
             "@type": "City",
@@ -357,7 +355,6 @@ export default function RootLayout({ children }) {
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",
-                priceRange: "$$",
               },
             }),
           }}
@@ -395,7 +392,6 @@ export default function RootLayout({ children }) {
               offers: {
                 "@type": "Offer",
                 availability: "https://schema.org/InStock",
-                priceRange: "$$",
               },
             }),
           }}
