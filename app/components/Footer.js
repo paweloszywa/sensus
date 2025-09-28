@@ -1,4 +1,4 @@
-import { Heart, Phone, Mail, MapPin } from "lucide-react";
+import { Heart, Phone, Mail, MapPin, Facebook } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -36,7 +36,9 @@ export default function Footer() {
               />
               {/* Ukryty tekst dla SEO */}
               <div className="sr-only">
-                <span>Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka</span>
+                <span>
+                  Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka
+                </span>
                 <span>Profesjonalne terapie dla dzieci w Kielcach</span>
               </div>
             </div>
@@ -132,6 +134,23 @@ export default function Footer() {
                     ul. Karczówkowska 11
                   </a>
                   <div className="text-gray-200 text-sm">25-019 Kielce</div>
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                <Facebook className="h-4 w-4 mr-3 text-blue-400 flex-shrink-0" />
+                <div>
+                  <a
+                    href="https://www.facebook.com/p/Sensus-Centrum-Terapii-i-Wspomagania-Rozwoju-Dziecka-61576806726313/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-blue-300 transition-colors duration-200"
+                  >
+                    Facebook
+                  </a>
+                  <div className="text-gray-200 text-sm">
+                    Śledź nasze aktualności
+                  </div>
                 </div>
               </div>
             </div>
