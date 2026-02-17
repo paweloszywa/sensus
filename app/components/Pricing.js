@@ -4,7 +4,7 @@ export default function Pricing() {
   const pricingPlans = [
     {
       name: "Konsultacja diagnostyczna",
-      price: "150",
+      price: "200",
       duration: "50 min",
       description: "Kompleksowa diagnoza potrzeb dziecka",
       features: [
@@ -19,7 +19,7 @@ export default function Pricing() {
     },
     {
       name: "Terapia indywidualna",
-      price: "120",
+      price: "140",
       duration: "50 min",
       description: "Sesja terapeutyczna dostosowana do potrzeb",
       features: [
@@ -33,11 +33,11 @@ export default function Pricing() {
     },
     {
       name: "TUS - Terapia grupowa",
-      price: "120",
+      price: "140",
       duration: "50 min",
       description: "Terapia w małej grupie dzieci",
       features: [
-        "Grupa do 3-4 dzieci",
+        "Grupa do 4 dzieci",
         "Rozwój społeczny",
         "Współpraca i komunikacja",
         "Wsparcie rówieśników",
