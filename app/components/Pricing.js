@@ -33,7 +33,7 @@ export default function Pricing() {
     },
     {
       name: "TUS - Terapia grupowa",
-      price: "140",
+      price: "120",
       duration: "50 min",
       description: "Terapia w małej grupie dzieci",
       features: [
