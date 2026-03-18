@@ -43,8 +43,8 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img
-              src="/images/16.jpg"
-              alt="Wnętrze centrum terapii Sensus"
+              src="/images/25.jpg"
+              alt="Sesja terapeutyczna - praca z dzieckiem w centrum"
               className="rounded-lg shadow-lg w-full h-96 object-cover"
             />
           </div>

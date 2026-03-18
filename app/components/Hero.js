@@ -70,7 +70,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative z-10 aspect-[4/5] lg:aspect-[3/4]">
               <Image
-                src="/images/top.jpg"
+                src="/images/26.jpg"
                 alt="Centrum Terapii Sensus - Wspomaganie rozwoju dziecka"
                 fill
                 className="rounded-lg shadow-2xl object-cover"
