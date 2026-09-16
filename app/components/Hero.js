@@ -53,7 +53,7 @@ export default function Hero() {
                 <div className="flex justify-center mb-2">
                   <Star className="h-8 w-8 text-accent-400" />
                 </div>
-                <div className="text-2xl font-bold text-gray-900">8</div>
+                <div className="text-2xl font-bold text-gray-900">10</div>
                 <div className="text-sm text-gray-600">Rodzajów terapii</div>
               </div>
               <div className="text-center">

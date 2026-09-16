@@ -65,7 +65,7 @@ export default function Services() {
       icon: Target,
       title: "TUS (Trening Umiejętności Społecznych)",
       description:
-        "Program rozwijający kompetencje społeczne i umiejętności komunikacyjne.",
+        "Program rozwijający kompetencje społeczne i umiejętności komunikacyjne. Zajęcia odbywają się w piątki: dla dzieci w wieku 6-7 lat o godz. 16:00, a dla dzieci w wieku 8-9 lat o godz. 17:00.",
       details: [
         "Uczy zasad współpracy",
         "Rozwija empatię",
@@ -112,6 +112,17 @@ export default function Services() {
         "Rozwija funkcje wykonawcze",
         "Poprawia zdolność planowania",
         "Rozwija umiejętność ignorowania rozpraszaczy",
+      ],
+    },
+    {
+      icon: Brain,
+      title: "Zajęcia z psychologiem",
+      description:
+        "W naszej ofercie znajdują się również zajęcia z psychologiem.",
+      details: [
+        "Wsparcie w rozwoju emocjonalnym",
+        "Rozmowy dopasowane do wieku dziecka",
+        "Pomoc w codziennych trudnościach",
       ],
     },
     {
@@ -180,7 +191,11 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-200"
+                className={`bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-200 ${
+                  isLast && services.length % 4 === 2
+                    ? "xl:col-span-2 xl:max-w-sm xl:w-full xl:justify-self-center"
+                    : ""
+                }`}
               >
                 <div className="flex justify-center mb-4">
                   <service.icon className="h-12 w-12 text-secondary-300" />
@@ -221,13 +236,26 @@ export default function Services() {
         <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
           Biofeedback – nowoczesny trening samoregulacji
         </h3>
-        <p className="text-gray-700 mb-4 leading-relaxed">
+        <p className="text-gray-700 mb-6 leading-relaxed text-center">
+          Biofeedback pomaga dziecku lepiej rozumieć i regulować reakcje swojego
+          organizmu. To bezpieczny trening wspierający koncentrację, wyciszenie
+          i radzenie sobie z napięciem.
+        </p>
+        <details>
+          <summary className="cursor-pointer text-lg font-semibold text-gray-900 text-center">
+            Dowiedz się więcej o biofeedbacku
+          </summary>
+          <div className="mt-6">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+            Biofeedback – nowoczesny trening samoregulacji
+          </h3>
+          <p className="text-gray-700 mb-4 leading-relaxed">
           Biofeedback to nowoczesna i bezpieczna metoda treningowa, która uczy
           świadomej regulacji pracy organizmu, w szczególności układu nerwowego.
           Dzięki informacji zwrotnej otrzymywanej w czasie rzeczywistym możliwe
           jest realne wpływanie na koncentrację, poziom stresu, wyciszenie oraz
           relaksację.
-        </p>
+          </p>
         <p className="text-gray-700 mb-4 leading-relaxed">
           Podczas treningu osoba ćwicząca otrzymuje czytelne sygnały pokazujące,
           jak funkcjonuje jej organizm – m.in. mózg, mięśnie, rytm serca czy
@@ -325,6 +353,8 @@ export default function Services() {
           Biofeedback to metoda: nieinwazyjna, całkowicie bezpieczna, pozbawiona
           skutków ubocznych.
         </p>
+          </div>
+        </details>
       </div>
     </section>
   );
