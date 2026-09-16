@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import BajkoweWieczory from "./components/BajkoweWieczory";
 import About from "./components/About";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <BajkoweWieczory />
       <About />
       <Services />
       <Pricing />
