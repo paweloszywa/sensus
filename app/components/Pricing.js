@@ -42,6 +42,8 @@ export default function Pricing() {
         "Współpraca i komunikacja",
         "Wsparcie rówieśników",
         "Grupy dostosowane według wieku i potrzeb dziecka",
+        "Dzieci 6–7 lat: piątki, godz. 16:00",
+        "Dzieci 8–9 lat: piątki, godz. 17:00",
       ],
       popular: false,
     },
@@ -101,12 +103,24 @@ export default function Pricing() {
               </div>
 
               <ul className="space-y-3 mb-8">
-                {plan.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center">
-                    <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
-                  </li>
-                ))}
+                {plan.features.map((feature, featureIndex) => {
+                  const isHighlighted =
+                    feature.includes("Dzieci 6–7 lat") ||
+                    feature.includes("Dzieci 8–9 lat");
+
+                  return (
+                    <li key={featureIndex} className="flex items-center">
+                      <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
+                      <span
+                        className={
+                          isHighlighted ? "text-gray-700 font-semibold" : "text-gray-700"
+                        }
+                      >
+                        {feature}
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
 
               <a

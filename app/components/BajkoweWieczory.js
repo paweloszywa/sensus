@@ -73,6 +73,40 @@ export default function BajkoweWieczory() {
           </a>
         </div>
       </div>
+
+      <div className="mx-auto mt-12 max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-3xl border border-sky-200 bg-gradient-to-r from-sky-50 via-white to-violet-50 p-6 shadow-[0_18px_40px_rgba(14,116,144,0.08)] ring-1 ring-sky-100 md:p-8">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-3xl">
+              <span className="inline-flex items-center rounded-full bg-sky-600 px-3 py-1 text-sm font-semibold text-white shadow-sm">
+                Wkrótce w Sensus
+              </span>
+              <h3 className="mt-4 text-2xl font-bold text-gray-900 md:text-3xl">
+                Szkolenia z integracji sensorycznej
+              </h3>
+              <p className="mt-3 text-base leading-relaxed text-gray-700 md:text-lg">
+                W Sensus przygotowujemy cykl warsztatowych szkoleń dla studentów
+                i przyszłych specjalistów, poświęconych integracji sensorycznej.
+                To praktyczne zajęcia, które pomogą lepiej zrozumieć, jak
+                odbieranie bodźców sensorycznych wpływa na rozwój dziecka,
+                koncentrację, samoregulację i funkcjonowanie emocjonalne.
+              </p>
+            </div>
+
+            <div className="lg:min-w-[230px] lg:text-right">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
+                Start
+              </p>
+              <p className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
+                koniec października
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+                Szczegółowy program i zapisy pojawią się wkrótce.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
