@@ -1,10 +1,36 @@
-import { Heart, Star, Users } from "lucide-react";
+import { CalendarDays, Heart, Star, Users } from "lucide-react";
 import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="pt-20 bg-white min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="mb-10 flex flex-col gap-3 rounded-2xl border border-primary-200 border-l-4 border-l-primary-500 bg-primary-50 p-4 shadow-sm sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:gap-8 lg:rounded-2xl lg:border-primary-700 lg:bg-primary-500 lg:px-8 lg:py-6 lg:shadow-[0_18px_40px_rgba(30,58,95,0.2)]">
+          <div className="flex items-center gap-2 font-bold text-primary-700 lg:gap-3 lg:text-white">
+            <CalendarDays className="h-5 w-5 shrink-0" />
+            <div>
+              <span className="lg:text-lg">Wydarzenia w Sensus</span>
+              <span className="hidden text-sm font-normal text-primary-100 lg:block">
+                Poznaj nasze najbliższe wydarzenia
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <a
+              href="#szkolenie-integracja-sensoryczna"
+              className="rounded-lg bg-primary-500 px-3 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-600 lg:bg-white lg:px-5 lg:py-3 lg:text-base lg:text-primary-700 lg:shadow-sm lg:hover:bg-primary-50"
+            >
+              Szkolenie SI · 25.10.2026
+            </a>
+            <a
+              href="#bajkowe-wieczory"
+              className="rounded-lg bg-primary-500 px-3 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-600 lg:bg-white lg:px-5 lg:py-3 lg:text-base lg:text-primary-700 lg:shadow-sm lg:hover:bg-primary-50"
+            >
+              Bajkowe wieczory
+            </a>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left">

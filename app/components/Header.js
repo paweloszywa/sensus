@@ -19,6 +19,11 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const eventItems = [
+    { name: "Szkolenie SI", href: "#szkolenie-integracja-sensoryczna" },
+    { name: "Bajkowe wieczory", href: "#bajkowe-wieczory" },
+  ];
+
   const menuItems = [
     { name: "O nas", href: "#about" },
     { name: "Oferta", href: "#services" },
@@ -60,7 +65,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             {/* Phone number */}
             <a
               href="tel:516577126"
@@ -70,12 +75,21 @@ export default function Header() {
               516 577 126
             </a>
 
-            <nav className="flex space-x-8">
+            <nav aria-label="Nawigacja główna" className="flex items-center gap-1">
+              {eventItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="whitespace-nowrap rounded-lg bg-primary-500 px-3 py-2 text-sm font-bold text-white shadow-sm transition-all hover:bg-primary-600 hover:shadow-md"
+                >
+                  {item.name}
+                </a>
+              ))}
               {menuItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-primary-500 px-3 py-2 text-base font-medium transition-colors duration-200"
+                  className="whitespace-nowrap px-2 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-primary-500"
                 >
                   {item.name}
                 </a>
@@ -84,7 +98,7 @@ export default function Header() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
               className="text-gray-700 hover:text-primary-500 focus:outline-none focus:text-primary-500"
@@ -102,18 +116,42 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+          <div className="lg:hidden">
+            <div className="space-y-4 border-t bg-white px-2 pb-4 pt-4">
+              <div>
+                <p className="px-3 pb-2 text-xs font-bold uppercase tracking-wider text-primary-700">
+                  Wydarzenia
+                </p>
+                <div className="space-y-1">
+                  {eventItems.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="block rounded-lg bg-primary-500 px-3 py-3 text-base font-bold text-white shadow-sm transition-all hover:bg-primary-600 hover:shadow-md"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="px-3 pb-2 text-xs font-bold uppercase tracking-wider text-gray-500">
+                  Strona
+                </p>
+                <div className="space-y-1">
               {menuItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-500 hover:bg-gray-50"
+                  className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-gray-50 hover:text-primary-500"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -122,7 +160,7 @@ export default function Header() {
       {/* Floating phone button */}
       <a
         href="tel:516577126"
-        className="fixed bottom-6 right-6 bg-accent-400 hover:bg-accent-500 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 md:hidden"
+        className="fixed bottom-6 right-6 bg-accent-400 hover:bg-accent-500 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 lg:hidden"
         aria-label="Zadzwoń do centrum Sensus - 516 577 126"
       >
         <Phone className="h-6 w-6" />
