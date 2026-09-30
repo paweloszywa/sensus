@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import SzkolenieIntegracjaSensoryczna from "./components/SzkolenieIntegracjaSensoryczna";
 import BajkoweWieczory from "./components/BajkoweWieczory";
 import About from "./components/About";
 import Services from "./components/Services";
@@ -14,6 +15,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <SzkolenieIntegracjaSensoryczna />
       <BajkoweWieczory />
       <About />
       <Services />
