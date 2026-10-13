@@ -23,7 +23,10 @@ const additionalBenefits = ["Kawa i herbata", "Poczęstunek", "Obiad"];
 
 export default function SzkolenieIntegracjaSensoryczna() {
   return (
-    <section id="szkolenie-integracja-sensoryczna" className="bg-teal-50 py-14 lg:py-16">
+    <section
+      id="szkolenie-integracja-sensoryczna"
+      className="bg-teal-50 py-14 lg:py-16"
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <article className="overflow-hidden rounded-3xl border border-teal-200 bg-white shadow-[0_24px_60px_rgba(15,118,110,0.12)]">
           <div className="bg-teal-800 px-6 py-8 text-white md:px-10 md:py-10">
@@ -97,8 +100,8 @@ export default function SzkolenieIntegracjaSensoryczna() {
                   Kameralna grupa umożliwi aktywny udział, zadawanie pytań i
                   samodzielne wypróbowanie prezentowanych pomocy oraz
                   aktywności. Uczestnicy nie tylko zdobędą wiedzę, ale również
-                  doświadczą wybranych ćwiczeń i poznają praktyczne
-                  zastosowanie omawianych zagadnień.
+                  doświadczą wybranych ćwiczeń i poznają praktyczne zastosowanie
+                  omawianych zagadnień.
                 </p>
               </div>
             </div>
