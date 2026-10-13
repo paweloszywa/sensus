@@ -42,7 +42,7 @@ export default function SzkolenieIntegracjaSensoryczna() {
               <div className="flex items-center gap-3 rounded-xl bg-white/10 p-4">
                 <CalendarDays className="h-5 w-5 shrink-0 text-teal-200" />
                 <span className="font-semibold">
-                  25 października 2026 r. – niedziela
+                  8 listopada 2026 r. – niedziela
                 </span>
               </div>
               <div className="flex items-center gap-3 rounded-xl bg-white/10 p-4">
@@ -176,7 +176,7 @@ export default function SzkolenieIntegracjaSensoryczna() {
                     Messenger
                   </a>
                   <a
-                    href="mailto:sensuskielce@gmail.com?subject=Szkolenie%20SI%2025.10.2026"
+                    href="mailto:sensuskielce@gmail.com?subject=Szkolenie%20SI%208.11.2026"
                     className="inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-teal-100 px-3 py-3 text-sm font-semibold text-teal-900 shadow-sm transition-colors hover:bg-teal-50"
                   >
                     <Mail className="h-5 w-5 shrink-0" />
@@ -194,7 +194,7 @@ export default function SzkolenieIntegracjaSensoryczna() {
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-gray-700">
                   Rezerwacja miejsca następuje po dokonaniu wpłaty. Wpłać
-                  najpóźniej do 22 października 2026 r. lub do wyczerpania
+                  najpóźniej do 1 listopada 2026 r. lub do wyczerpania
                   dostępnych miejsc.
                 </p>
                 <div className="mt-5 space-y-3 rounded-xl bg-gray-50 p-4 text-sm">
@@ -211,7 +211,7 @@ export default function SzkolenieIntegracjaSensoryczna() {
                       Tytuł przelewu:
                     </span>{" "}
                     <span className="text-gray-700">
-                      „Szkolenie SI 25.10.2026 – imię i nazwisko uczestnika”
+                      „Szkolenie SI 8.11.2026 – imię i nazwisko uczestnika”
                     </span>
                   </p>
                 </div>

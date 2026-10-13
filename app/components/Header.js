@@ -75,7 +75,10 @@ export default function Header() {
               516 577 126
             </a>
 
-            <nav aria-label="Nawigacja główna" className="flex items-center gap-1">
+            <nav
+              aria-label="Nawigacja główna"
+              className="flex items-center gap-1"
+            >
               {eventItems.map((item) => (
                 <a
                   key={item.name}
@@ -140,16 +143,16 @@ export default function Header() {
                   Strona
                 </p>
                 <div className="space-y-1">
-              {menuItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-gray-50 hover:text-primary-500"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
+                  {menuItems.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-gray-50 hover:text-primary-500"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>

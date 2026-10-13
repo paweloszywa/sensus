@@ -20,7 +20,7 @@ export default function Hero() {
               href="#szkolenie-integracja-sensoryczna"
               className="rounded-lg bg-primary-500 px-3 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-600 lg:bg-white lg:px-5 lg:py-3 lg:text-base lg:text-primary-700 lg:shadow-sm lg:hover:bg-primary-50"
             >
-              Szkolenie SI · 25.10.2026
+              Szkolenie SI · 08.11.2026
             </a>
             <a
               href="#bajkowe-wieczory"
