@@ -7,6 +7,7 @@ import {
   Waves,
   Zap,
   Eye,
+  MessageCircle,
 } from "lucide-react";
 
 export default function Services() {
@@ -37,6 +38,73 @@ export default function Services() {
       ],
     },
     {
+      icon: Brain,
+      title: "Biofeedback",
+      description:
+        "Nowoczesny trening samoregulacji pracy organizmu i układu nerwowego.",
+      details: [
+        "Poprawa koncentracji i uwagi",
+        "Lepsza pamięć",
+        "Większa stabilność emocjonalna",
+        "Obniżenie poziomu napięcia i lęku",
+        "Zwiększenie odporności na stres",
+        "Lepsza jakość snu",
+        "Bezpieczna, nieinwazyjna metoda",
+      ],
+    },
+    {
+      icon: Target,
+      title: "TUS (Trening Umiejętności Społecznych)",
+      description:
+        "Program rozwijający kompetencje społeczne i umiejętności komunikacyjne. Zajęcia odbywają się w piątki: dla dzieci w wieku 6-7 lat o godz. 16:00, a dla dzieci w wieku 8-9 lat o godz. 17:00.",
+      details: [
+        "Uczy zasad współpracy",
+        "Rozwija empatię",
+        "Buduje pewność siebie",
+        "Wspiera umiejętności komunikacyjne",
+        "Pomaga w nawiązywaniu relacji",
+      ],
+    },
+    {
+      icon: Brain,
+      title: "Zajęcia z psychologiem",
+      description:
+        "W naszej ofercie znajdują się również zajęcia z psychologiem.",
+      details: [
+        "Wsparcie w rozwoju emocjonalnym",
+        "Rozmowy dopasowane do wieku dziecka",
+        "Pomoc w codziennych trudnościach",
+      ],
+    },
+    {
+      icon: MessageCircle,
+      title: "Terapia logopedyczna",
+      description:
+        "Terapia wspierająca rozwój mowy, komunikację i pewność siebie dziecka.",
+      details: [
+        "Koryguje wady wymowy i usuwa bariery komunikacyjne",
+        "Usprawnia motorykę aparatu artykulacyjnego",
+        "Stymuluje rozwój mowy i ułatwia start w przedszkolu i szkole",
+        "Rozwija zasób słownictwa i umiejętność budowania wypowiedzi",
+        "Buduje pewność siebie w codziennych kontaktach z ludźmi",
+        "Ćwiczy słuch fonematyczny",
+        "Łączy naukę z zabawą i naturalną chęcią do mówienia",
+      ],
+    },
+    {
+      icon: Zap,
+      title: "Korekcja wad postawy",
+      description:
+        "Kompleksowa terapia usprawniająca postawę ciała i funkcje motoryczne.",
+      details: [
+        "Poprawia sylwetkę",
+        "Wzmconienie mięśni posturalnych",
+        "Uczy prawidłowych wzorców ruchowych",
+        "Poprawia równowagę i stabilność",
+        "Zwiększa elastyczność i ruchomość",
+      ],
+    },
+    {
       icon: Hand,
       title: "Terapia ręki",
       description:
@@ -62,19 +130,6 @@ export default function Services() {
       ],
     },
     {
-      icon: Target,
-      title: "TUS (Trening Umiejętności Społecznych)",
-      description:
-        "Program rozwijający kompetencje społeczne i umiejętności komunikacyjne. Zajęcia odbywają się w piątki: dla dzieci w wieku 6-7 lat o godz. 16:00, a dla dzieci w wieku 8-9 lat o godz. 17:00.",
-      details: [
-        "Uczy zasad współpracy",
-        "Rozwija empatię",
-        "Buduje pewność siebie",
-        "Wspiera umiejętności komunikacyjne",
-        "Pomaga w nawiązywaniu relacji",
-      ],
-    },
-    {
       icon: Waves,
       title: "Terapia neurotaktylna",
       description:
@@ -85,19 +140,6 @@ export default function Services() {
         "Wspiera rozwój neuromotoryczny",
         "Poprawa samoregulacji",
         "Poprawa zachowania i funkcjonowania emocjonalnego",
-      ],
-    },
-    {
-      icon: Zap,
-      title: "Korekcja wad postawy",
-      description:
-        "Kompleksowa terapia usprawniająca postawę ciała i funkcje motoryczne.",
-      details: [
-        "Poprawia sylwetkę",
-        "Wzmconienie mięśni posturalnych",
-        "Uczy prawidłowych wzorców ruchowych",
-        "Poprawia równowagę i stabilność",
-        "Zwiększa elastyczność i ruchomość",
       ],
     },
     {
@@ -112,32 +154,6 @@ export default function Services() {
         "Rozwija funkcje wykonawcze",
         "Poprawia zdolność planowania",
         "Rozwija umiejętność ignorowania rozpraszaczy",
-      ],
-    },
-    {
-      icon: Brain,
-      title: "Zajęcia z psychologiem",
-      description:
-        "W naszej ofercie znajdują się również zajęcia z psychologiem.",
-      details: [
-        "Wsparcie w rozwoju emocjonalnym",
-        "Rozmowy dopasowane do wieku dziecka",
-        "Pomoc w codziennych trudnościach",
-      ],
-    },
-    {
-      icon: Brain,
-      title: "Biofeedback",
-      description:
-        "Nowoczesny trening samoregulacji pracy organizmu i układu nerwowego.",
-      details: [
-        "Poprawa koncentracji i uwagi",
-        "Lepsza pamięć",
-        "Większa stabilność emocjonalna",
-        "Obniżenie poziomu napięcia i lęku",
-        "Zwiększenie odporności na stres",
-        "Lepsza jakość snu",
-        "Bezpieczna, nieinwazyjna metoda",
       ],
     },
   ];
