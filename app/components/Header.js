@@ -20,16 +20,16 @@ export default function Header() {
   };
 
   const eventItems = [
-    { name: "Szkolenie SI", href: "#szkolenie-integracja-sensoryczna" },
-    { name: "Bajkowe wieczory", href: "#bajkowe-wieczory" },
+    { name: "Szkolenie SI", href: "/#szkolenie-integracja-sensoryczna" },
+    { name: "Bajkowe wieczory", href: "/#bajkowe-wieczory" },
   ];
 
   const menuItems = [
-    { name: "O nas", href: "#about" },
-    { name: "Oferta", href: "#services" },
-    { name: "Cennik", href: "#pricing" },
-    { name: "Galeria", href: "#gallery" },
-    { name: "Kontakt", href: "#contact" },
+    { name: "O nas", href: "/#about" },
+    { name: "Oferta", href: "/#services" },
+    { name: "Cennik", href: "/#pricing" },
+    { name: "Galeria", href: "/#gallery" },
+    { name: "Kontakt", href: "/#contact" },
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function Header() {
         >
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="flex items-center">
+            <a href="/" className="flex items-center">
               <img
                 src="/images/logo3.png"
                 alt="Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka w Kielcach - logo"
@@ -55,12 +55,10 @@ export default function Header() {
                 }`}
               />
               {/* Ukryty tekst dla SEO */}
-              <div className="sr-only">
-                <h1>
-                  Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka w
-                  Kielcach
-                </h1>
-              </div>
+              <span className="sr-only">
+                Sensus - Centrum Terapii i Wspomagania Rozwoju Dziecka w
+                Kielcach
+              </span>
             </a>
           </div>
 

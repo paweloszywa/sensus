@@ -4,11 +4,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: "O nas", href: "#about" },
-    { name: "Oferta", href: "#services" },
-    { name: "Cennik", href: "#pricing" },
-    { name: "Galeria", href: "#gallery" },
-    { name: "Kontakt", href: "#contact" },
+    { name: "O nas", href: "/#about" },
+    { name: "Oferta", href: "/#services" },
+    { name: "Cennik", href: "/#pricing" },
+    { name: "Galeria", href: "/#gallery" },
+    { name: "Kontakt", href: "/#contact" },
   ];
 
   const services = [
@@ -81,7 +81,7 @@ export default function Footer() {
               ))}
               <li className="text-white text-sm font-medium">
                 <a
-                  href="#services"
+                  href="/#services"
                   className="hover:text-gray-200 transition-colors duration-200"
                 >
                   Zobacz wszystkie usługi →

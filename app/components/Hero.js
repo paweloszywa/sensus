@@ -34,12 +34,12 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left">
-            <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Centrum Terapii i
               <span className="text-primary-500"> Wspomagania</span>
               <br />
               <span className="text-primary-500">Rozwoju Dziecka</span>
-            </h2>
+            </h1>
 
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
               Profesjonalne centrum terapii dziecka w Kielcach. Specjalizujemy
