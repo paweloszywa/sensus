@@ -71,15 +71,27 @@ export default function About() {
           </p>
         </div>
 
+        <div className="relative mx-auto mb-16 aspect-[16/9] max-w-5xl overflow-hidden rounded-3xl bg-gray-200 shadow-lg">
+          <Image
+            src="/images/team/DSC_8600.jpg"
+            alt="Zespół Sensus"
+            fill
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            className="object-cover"
+          />
+        </div>
+
         <div className="mb-16 grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl bg-gray-200 shadow-xl">
-            <Image
-              src="/images/team/Ewelina.jpg"
-              alt="Ewelina Cecko"
-              fill
-              sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover"
-            />
+          <div>
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl bg-gray-200 shadow-xl">
+              <Image
+                src="/images/team/Ewelina.jpg"
+                alt="Ewelina Cecko"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
           </div>
 
           <div>
