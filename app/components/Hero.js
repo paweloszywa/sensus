@@ -93,20 +93,18 @@ export default function Hero() {
           </div>
 
           {/* Image */}
-          <div className="relative">
-            <div className="relative z-10 aspect-[4/5] lg:aspect-[3/4]">
+          <div className="relative mx-auto w-full max-w-xl">
+            <div className="absolute inset-8 rounded-full bg-secondary-100/70 blur-2xl" />
+            <div className="relative aspect-[3/4] overflow-hidden rounded-[45%] bg-gradient-to-b from-primary-50 via-white to-secondary-50">
               <Image
-                src="/images/26.jpg"
-                alt="Centrum Terapii Sensus - Wspomaganie rozwoju dziecka"
+                src="/images/team/EwelinaTop.jpg"
+                alt="Ewelina Cecko, założycielka Sensus"
                 fill
-                className="rounded-lg shadow-2xl object-cover"
+                className="object-contain mix-blend-multiply"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
-            {/* Background decorations */}
-            <div className="absolute -top-4 -right-4 w-full h-full bg-secondary-200 rounded-lg -z-10"></div>
-            <div className="absolute -bottom-4 -left-4 w-full h-full bg-accent-200 rounded-lg -z-20"></div>
           </div>
         </div>
       </div>

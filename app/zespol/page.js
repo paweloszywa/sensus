@@ -47,13 +47,14 @@ export default function TeamPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-12 max-w-3xl text-center">
             <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-secondary-600">
-              Sensus · Centrum Terapii i Wspomagania Rozwoju Dziecka
+              Sensus · Kielce
             </p>
             <h1 className="mb-5 text-4xl font-bold text-gray-900 sm:text-5xl">
-              Poznaj Ewelinę
+              O nas
             </h1>
             <p className="text-lg leading-relaxed text-gray-600">
-              Poznaj osobę, od której zaczęła się historia Sensus.
+              Poznaj Sensus i Ewelinę Cecko — założycielkę centrum, która z
+              pasją wspiera rozwój dzieci i ich rodzin.
             </p>
           </div>
 
