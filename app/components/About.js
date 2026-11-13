@@ -76,9 +76,9 @@ export default function About() {
             src="/images/team/DSC_8600.jpg"
             alt="Zespół Sensus"
             width={1800}
-            height={1200}
+            height={1286}
             sizes="(max-width: 1024px) 100vw, 1024px"
-            className="block h-auto w-full object-contain"
+            className="block h-auto w-full"
           />
         </div>
 
