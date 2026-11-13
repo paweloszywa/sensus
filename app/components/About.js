@@ -71,13 +71,14 @@ export default function About() {
           </p>
         </div>
 
-        <div className="relative mx-auto mb-16 aspect-[16/9] max-w-5xl overflow-hidden rounded-3xl bg-gray-200 shadow-lg">
+        <div className="relative mx-auto mb-16 w-full max-w-5xl overflow-hidden rounded-3xl bg-gray-100 shadow-lg">
           <Image
             src="/images/team/DSC_8600.jpg"
             alt="Zespół Sensus"
-            fill
+            width={1800}
+            height={1200}
             sizes="(max-width: 1024px) 100vw, 1024px"
-            className="object-cover"
+            className="block h-auto w-full object-contain"
           />
         </div>
 
