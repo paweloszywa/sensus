@@ -31,6 +31,34 @@ const courses = [
   "Trening umiejętności społecznych — efektywne kształtowanie kluczowych kompetencji psychospołecznych oraz życiowych",
 ];
 
+const teamMembers = [
+  {
+    name: "Karolina Giersz",
+    role: "Pedagog specjalna",
+    image: "/images/team/Karolina.jpg",
+    description:
+      "Pracuję z dziećmi w wieku przedszkolnym i szkolnym o zróżnicowanych potrzebach rozwojowych i edukacyjnych. Łączę wiedzę z pedagogiki specjalnej i integracji sensorycznej, wspierając samodzielność oraz rozwój poznawczy, społeczny i emocjonalny. W relacji z dzieckiem stawiam na zaufanie, poczucie bezpieczeństwa i rozwijanie jego mocnych stron.",
+    therapies: [
+      "Integracja sensoryczna",
+      "Terapia ręki",
+      "Terapia pedagogiczna",
+      "Zajęcia wspierające rozwój dzieci z niepełnosprawnością intelektualną",
+    ],
+    education:
+      "Pedagogika specjalna: resocjalizacja; edukacja i rehabilitacja uczniów z niepełnosprawnością intelektualną; diagnoza, terapia i edukacja osób ze spektrum autyzmu. Ukończyłam także studia podyplomowe z integracji sensorycznej oraz szkolenie z terapii ręki.",
+  },
+  {
+    name: "Klaudia Szczerek",
+    role: "Magister fizjoterapii, terapeutka integracji sensorycznej",
+    image: "/images/team/Klaudia.jpg",
+    description:
+      "Wspieram dzieci w lepszym poznawaniu swojego ciała, rozumieniu odbieranych bodźców i radzeniu sobie z codziennymi wyzwaniami. Nieustannie rozwijam swoją wiedzę, aby jak najlepiej odpowiadać na potrzeby małych podopiecznych. Cieszy mnie obserwowanie ich postępów i towarzyszenie im w odkrywaniu własnych możliwości.",
+    therapies: ["Integracja sensoryczna", "Terapia neurotaktylna"],
+    education:
+      "Ukończyłam studia magisterskie z fizjoterapii na Uniwersytecie Jana Kochanowskiego w Kielcach. Mam kursy I i II stopnia integracji sensorycznej PSTIS, kinesiotapingu, Globalnej Terapii Stopy i Terapii NeuroTaktylnej. Obecnie studiuję w Akademii Osteopatii w Krakowie.",
+  },
+];
+
 const features = [
   {
     icon: Award,
@@ -195,6 +223,60 @@ export default function About() {
             </ul>
           </section>
         </div>
+
+        <section aria-labelledby="about-team-heading" className="mb-16">
+          <div className="mb-8 text-center">
+            <h3
+              id="about-team-heading"
+              className="text-2xl font-bold text-gray-900 sm:text-3xl"
+            >
+              Poznaj nasz zespół
+            </h3>
+          </div>
+          <div className="space-y-14">
+            {teamMembers.map((member) => (
+              <article
+                key={member.name}
+                className="grid items-start gap-8 border-t border-gray-200 pt-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16"
+              >
+                <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl bg-gray-200 shadow-xl lg:mx-0">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div>
+                  <p className="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-secondary-600">
+                    {member.role}
+                  </p>
+                  <h4 className="mb-5 text-3xl font-bold text-gray-900">
+                    {member.name}
+                  </h4>
+                  <p className="mb-6 leading-relaxed text-gray-700">
+                    {member.description}
+                  </p>
+                  <h5 className="mb-2 font-semibold text-gray-900">
+                    Prowadzone terapie
+                  </h5>
+                  <ul className="mb-6 list-inside list-disc space-y-1 text-gray-600">
+                    {member.therapies.map((therapy) => (
+                      <li key={therapy}>{therapy}</li>
+                    ))}
+                  </ul>
+                  <h5 className="mb-2 font-semibold text-gray-900">
+                    Wykształcenie i kursy
+                  </h5>
+                  <p className="leading-relaxed text-gray-600">
+                    {member.education}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => (

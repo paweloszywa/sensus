@@ -39,6 +39,46 @@ const courses = [
   "Trening umiejętności społecznych — efektywne kształtowanie kluczowych kompetencji psychospołecznych oraz życiowych",
 ];
 
+const teamMembers = [
+  {
+    name: "Karolina Giersz",
+    role: "Pedagog specjalna",
+    image: "/images/team/Karolina.jpg",
+    description:
+      "Pracuje z dziećmi w wieku przedszkolnym i szkolnym, uwzględniając ich zróżnicowane potrzeby rozwojowe i edukacyjne. Łączy wiedzę z pedagogiki specjalnej i integracji sensorycznej, wspierając samodzielność oraz rozwój poznawczy, społeczny i emocjonalny. W relacji z dzieckiem stawia na zaufanie, poczucie bezpieczeństwa i wzmacnianie jego mocnych stron.",
+    therapies: [
+      "Integracja sensoryczna",
+      "Terapia ręki",
+      "Terapia pedagogiczna",
+      "Zajęcia wspierające rozwój dzieci z niepełnosprawnością intelektualną",
+    ],
+    education: [
+      "Pedagogika specjalna — resocjalizacja (studia licencjackie)",
+      "Pedagogika specjalna — edukacja i rehabilitacja uczniów z niepełnosprawnością intelektualną (studia magisterskie)",
+      "Diagnoza, terapia i edukacja osób z zaburzeniami ze spektrum autyzmu (studia podyplomowe)",
+      "Integracja sensoryczna (studia podyplomowe)",
+      "Terapia ręki — diagnoza, terapia i masaż; liczne szkolenia, kursy i webinaria",
+    ],
+  },
+  {
+    name: "Klaudia Szczerek",
+    role: "Magister fizjoterapii, terapeutka integracji sensorycznej",
+    image: "/images/team/Klaudia.jpg",
+    description:
+      "Wspiera rozwój dzieci, pomagając im lepiej poznawać swoje ciało, rozumieć odbierane bodźce i radzić sobie z codziennymi wyzwaniami. Nieustannie poszerza wiedzę, by jak najlepiej odpowiadać na potrzeby małych podopiecznych. Czerpie satysfakcję z obserwowania ich postępów i towarzyszenia im w odkrywaniu własnych możliwości.",
+    therapies: ["Integracja sensoryczna", "Terapia neurotaktylna"],
+    education: [
+      "Studia magisterskie na kierunku Fizjoterapia — Uniwersytet Jana Kochanowskiego w Kielcach",
+      "Kurs Kinesiotapingu",
+      "Integracja sensoryczna I stopnia — neurobiologiczne podstawy rozwoju (PSTIS)",
+      "Integracja sensoryczna II stopnia — diagnoza i terapia (PSTIS)",
+      "Kurs Globalnej Terapii Stopy",
+      "Kurs Terapii NeuroTaktylnej",
+      "Studentka Akademii Osteopatii w Krakowie",
+    ],
+  },
+];
+
 export default function TeamPage() {
   return (
     <main className="min-h-screen bg-white">
@@ -197,6 +237,69 @@ export default function TeamPage() {
               </ul>
             </section>
           </div>
+
+          <section aria-labelledby="team-members-heading" className="mt-16">
+            <div className="mx-auto mb-10 max-w-3xl text-center">
+              <h2
+                id="team-members-heading"
+                className="text-3xl font-bold text-gray-900"
+              >
+                Poznaj nasz zespół
+              </h2>
+            </div>
+            <div className="grid gap-8 lg:grid-cols-2">
+              {teamMembers.map((member) => (
+                <article
+                  key={member.name}
+                  className="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm"
+                >
+                  <div className="grid sm:grid-cols-[0.8fr_1.2fr]">
+                    <div className="relative min-h-80 bg-gray-100 sm:min-h-full">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 40vw, 25vw"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6 sm:p-7">
+                      <p className="mb-2 text-sm font-semibold text-secondary-600">
+                        {member.role}
+                      </p>
+                      <h3 className="mb-4 text-2xl font-bold text-gray-900">
+                        {member.name}
+                      </h3>
+                      <p className="mb-6 leading-relaxed text-gray-600">
+                        {member.description}
+                      </p>
+                      <h4 className="mb-3 font-semibold text-gray-900">
+                        Prowadzone terapie
+                      </h4>
+                      <ul className="mb-6 list-inside list-disc space-y-1 text-gray-600">
+                        {member.therapies.map((therapy) => (
+                          <li key={therapy}>{therapy}</li>
+                        ))}
+                      </ul>
+                      <h4 className="mb-3 font-semibold text-gray-900">
+                        Wykształcenie i kursy
+                      </h4>
+                      <ul className="space-y-2 text-sm leading-relaxed text-gray-600">
+                        {member.education.map((item) => (
+                          <li
+                            key={item}
+                            className="border-l-2 border-primary-200 pl-3"
+                          >
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
 
           <div className="mt-14 text-center">
             <a
