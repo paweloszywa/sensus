@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import {
   BookOpen,
@@ -9,14 +12,47 @@ import {
   Phone,
 } from "lucide-react";
 import poster from "../../images/posters/bajkowe-wieczory.webp";
+import andrzejkowyPoster from "../../images/posters/bajkowe-wieczory-do-28-11.jpeg";
 
 export default function BajkoweWieczory() {
+  const [showAndrzejkowyPoster, setShowAndrzejkowyPoster] = useState(false);
+
+  useEffect(() => {
+    const endTime = new Date("2026-11-28T17:00:00+01:00").getTime();
+    const updatePoster = () => {
+      setShowAndrzejkowyPoster(Date.now() < endTime);
+    };
+
+    updatePoster();
+    const remainingTime = endTime - Date.now();
+    const timeout =
+      remainingTime > 0
+        ? window.setTimeout(updatePoster, remainingTime)
+        : null;
+    return () => {
+      if (timeout !== null) window.clearTimeout(timeout);
+    };
+  }, []);
+
   const highlights = [
-    { icon: BookOpen, text: "Bajki wspierające rozwój emocjonalny" },
-    { icon: Music2, text: "Muzyka relaksacyjna grana przez DJ-a" },
-    { icon: Leaf, text: "Relaksacyjne nuty zapachowe" },
-    { icon: HeartHandshake, text: "Rozmowy o emocjach i poczuciu bezpieczeństwa" },
-    { icon: Moon, text: "Chwila spokoju, relaksu i wyobraźni" },
+    showAndrzejkowyPoster
+      ? { icon: BookOpen, text: "Czytanie bajek terapeutycznych" }
+      : { icon: BookOpen, text: "Bajki wspierające rozwój emocjonalny" },
+    showAndrzejkowyPoster
+      ? { icon: HeartHandshake, text: "Andrzejkowe wróżby i zabawy" }
+      : { icon: Music2, text: "Muzyka relaksacyjna grana przez DJ-a" },
+    showAndrzejkowyPoster
+      ? { icon: Moon, text: "Magiczna atmosfera i niespodzianki" }
+      : { icon: Leaf, text: "Relaksacyjne nuty zapachowe" },
+    showAndrzejkowyPoster
+      ? { icon: Leaf, text: "Relaks i wspólna zabawa" }
+      : {
+          icon: HeartHandshake,
+          text: "Rozmowy o emocjach i poczuciu bezpieczeństwa",
+        },
+    showAndrzejkowyPoster
+      ? { icon: Music2, text: "Wyjątkowy wieczór pełen magii" }
+      : { icon: Moon, text: "Chwila spokoju, relaksu i wyobraźni" },
   ];
 
   return (
@@ -27,8 +63,12 @@ export default function BajkoweWieczory() {
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(280px,440px)_1fr] lg:gap-16 lg:px-8">
         <div className="mx-auto w-full max-w-md lg:max-w-none">
           <Image
-            src={poster}
-            alt="Plakat wydarzenia Bajkowe wieczory w centrum Sensus"
+            src={showAndrzejkowyPoster ? andrzejkowyPoster : poster}
+            alt={
+              showAndrzejkowyPoster
+                ? "Plakat wydarzenia Bajkowy Wieczór Andrzejkowy w centrum Sensus"
+                : "Plakat wydarzenia Bajkowe wieczory w centrum Sensus"
+            }
             className="h-auto w-full rounded-lg shadow-xl"
             sizes="(max-width: 1024px) 90vw, 440px"
           />
@@ -36,15 +76,19 @@ export default function BajkoweWieczory() {
 
         <div>
           <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-orange-700">
-            Jesienny cykl dla dzieci
+            {showAndrzejkowyPoster
+              ? "Wieczór pełen magii i niespodzianek"
+              : "Jesienny cykl dla dzieci"}
           </p>
           <h2 className="mb-5 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
-            Bajkowe wieczory
+            {showAndrzejkowyPoster
+              ? "Bajkowy Wieczór Andrzejkowy"
+              : "Bajkowe wieczory"}
           </h2>
           <p className="mb-7 max-w-2xl text-lg leading-relaxed text-gray-700">
-            Małe historie mogą wywoływać wielkie emocje. Zapraszamy dzieci w
-            wieku 4-8 lat na wyjątkowe 45 minut pełne bajek, rozmów o emocjach
-            i wyciszenia.
+            {showAndrzejkowyPoster
+              ? "Zapraszamy na magiczny wieczór z czytaniem bajek, andrzejkowymi wróżbami i zabawami dla dzieci."
+              : "Małe historie mogą wywoływać wielkie emocje. Zapraszamy dzieci w wieku 4-8 lat na wyjątkowe 45 minut pełne bajek, rozmów o emocjach i wyciszenia."}
           </p>
 
           <ul className="mb-8 grid gap-4 sm:grid-cols-2">
@@ -59,9 +103,13 @@ export default function BajkoweWieczory() {
           <div className="mb-8 flex flex-wrap gap-x-8 gap-y-3 text-gray-800">
             <span className="inline-flex items-center gap-2 font-semibold">
               <CalendarClock className="h-5 w-5 text-orange-600" />
-              Czwartki, godz. 19:00
+              {showAndrzejkowyPoster
+                ? "28 listopada, godz. 17:00"
+                : "Czwartki, godz. 19:00"}
             </span>
-            <span className="font-semibold">Grupy 8-10 osób</span>
+            <span className="font-semibold">
+              {showAndrzejkowyPoster ? "Cena: 40 zł" : "Grupy 8-10 osób"}
+            </span>
           </div>
 
           <a
