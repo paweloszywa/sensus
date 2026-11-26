@@ -11,8 +11,8 @@ import {
   Music2,
   Phone,
 } from "lucide-react";
-import poster from "../../images/posters/bajkowe-wieczory.webp";
 import andrzejkowyPoster from "../../images/posters/bajkowe-wieczory-do-28-11.jpeg";
+import saturdayPoster from "../../images/posters/bajkowe-wieczory-soboty.jpeg";
 
 export default function BajkoweWieczory() {
   const [showAndrzejkowyPoster, setShowAndrzejkowyPoster] = useState(false);
@@ -26,9 +26,7 @@ export default function BajkoweWieczory() {
     updatePoster();
     const remainingTime = endTime - Date.now();
     const timeout =
-      remainingTime > 0
-        ? window.setTimeout(updatePoster, remainingTime)
-        : null;
+      remainingTime > 0 ? window.setTimeout(updatePoster, remainingTime) : null;
     return () => {
       if (timeout !== null) window.clearTimeout(timeout);
     };
@@ -40,19 +38,16 @@ export default function BajkoweWieczory() {
       : { icon: BookOpen, text: "Bajki wspierające rozwój emocjonalny" },
     showAndrzejkowyPoster
       ? { icon: HeartHandshake, text: "Andrzejkowe wróżby i zabawy" }
-      : { icon: Music2, text: "Muzyka relaksacyjna grana przez DJ-a" },
+      : { icon: Moon, text: "Relaksacja i wyciszenie" },
     showAndrzejkowyPoster
       ? { icon: Moon, text: "Magiczna atmosfera i niespodzianki" }
-      : { icon: Leaf, text: "Relaksacyjne nuty zapachowe" },
+      : { icon: Leaf, text: "Elementy aromaterapii" },
     showAndrzejkowyPoster
       ? { icon: Leaf, text: "Relaks i wspólna zabawa" }
       : {
           icon: HeartHandshake,
-          text: "Rozmowy o emocjach i poczuciu bezpieczeństwa",
+          text: "Rozwijanie emocji i wyobraźni",
         },
-    showAndrzejkowyPoster
-      ? { icon: Music2, text: "Wyjątkowy wieczór pełen magii" }
-      : { icon: Moon, text: "Chwila spokoju, relaksu i wyobraźni" },
   ];
 
   return (
@@ -63,11 +58,11 @@ export default function BajkoweWieczory() {
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(280px,440px)_1fr] lg:gap-16 lg:px-8">
         <div className="mx-auto w-full max-w-md lg:max-w-none">
           <Image
-            src={showAndrzejkowyPoster ? andrzejkowyPoster : poster}
+            src={showAndrzejkowyPoster ? andrzejkowyPoster : saturdayPoster}
             alt={
               showAndrzejkowyPoster
                 ? "Plakat wydarzenia Bajkowy Wieczór Andrzejkowy w centrum Sensus"
-                : "Plakat wydarzenia Bajkowe wieczory w centrum Sensus"
+                : "Plakat wydarzenia Bajkoterapia w centrum Sensus"
             }
             className="h-auto w-full rounded-lg shadow-xl"
             sizes="(max-width: 1024px) 90vw, 440px"
@@ -78,17 +73,17 @@ export default function BajkoweWieczory() {
           <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-orange-700">
             {showAndrzejkowyPoster
               ? "Wieczór pełen magii i niespodzianek"
-              : "Jesienny cykl dla dzieci"}
+              : "Bajkowe wieczory dla dzieci"}
           </p>
           <h2 className="mb-5 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
             {showAndrzejkowyPoster
               ? "Bajkowy Wieczór Andrzejkowy"
-              : "Bajkowe wieczory"}
+              : "Bajkoterapia"}
           </h2>
           <p className="mb-7 max-w-2xl text-lg leading-relaxed text-gray-700">
             {showAndrzejkowyPoster
               ? "Zapraszamy na magiczny wieczór z czytaniem bajek, andrzejkowymi wróżbami i zabawami dla dzieci."
-              : "Małe historie mogą wywoływać wielkie emocje. Zapraszamy dzieci w wieku 4-8 lat na wyjątkowe 45 minut pełne bajek, rozmów o emocjach i wyciszenia."}
+              : "Zapraszamy dzieci na bajki terapeutyczne, relaksację, wyciszenie i rozwijanie emocji oraz wyobraźni."}
           </p>
 
           <ul className="mb-8 grid gap-4 sm:grid-cols-2">
@@ -105,11 +100,9 @@ export default function BajkoweWieczory() {
               <CalendarClock className="h-5 w-5 text-orange-600" />
               {showAndrzejkowyPoster
                 ? "28 listopada, godz. 17:00"
-                : "Czwartki, godz. 19:00"}
+                : "Każda ostatnia sobota miesiąca, godz. 17:00"}
             </span>
-            <span className="font-semibold">
-              {showAndrzejkowyPoster ? "Cena: 40 zł" : "Grupy 8-10 osób"}
-            </span>
+            <span className="font-semibold">Cena: 40 zł</span>
           </div>
 
           <a
@@ -121,7 +114,6 @@ export default function BajkoweWieczory() {
           </a>
         </div>
       </div>
-
     </section>
   );
 }

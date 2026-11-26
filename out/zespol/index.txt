@@ -1,5 +1,5 @@
-1:HL["/_next/static/css/e3f68432d0ed6e10.css","style",{"crossOrigin":""}]
-0:["FBl8WsivcJ12XfF649IIv",[[["",{"children":["zespol",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e3f68432d0ed6e10.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/_next/static/css/38f951a0c7fcfdbc.css","style",{"crossOrigin":""}]
+0:["_JU1vZtE0bq_ZAfKJ2Q0U",[[["",{"children":["zespol",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/38f951a0c7fcfdbc.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 6:I[6954,[],""]
 7:I[7264,[],""]
 9:I[1331,["167","static/chunks/167-cb37282cdb70b8dd.js","768","static/chunks/app/zespol/page-cc401e57b2e1e086.js"],""]

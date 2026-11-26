@@ -1,3 +1,6 @@
 {
-  "/page": "app/page.js"
+  "/_not-found": "app/_not-found.js",
+  "/page": "app/page.js",
+  "/api/facebook-posts/route": "app/api/facebook-posts/route.js",
+  "/zespol/page": "app/zespol/page.js"
 }
